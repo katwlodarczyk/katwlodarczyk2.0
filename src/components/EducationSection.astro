@@ -1,0 +1,58 @@
+---
+import { education } from "../lib/data";
+---
+
+<section id="education" class="py-12 md:py-16 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-4 md:px-6">
+    <h2
+      class="scroll-reveal text-2xl md:text-3xl font-display mb-8 text-foreground"
+     
+    >
+      <span aria-hidden="true">🎓 </span><span class="text-highlight">Education</span>
+    </h2>
+
+    <div class="relative">
+      <div class="absolute left-3 top-2 bottom-2 w-px bg-border hidden md:block" aria-hidden="true"></div>
+
+      <ol class="space-y-6">
+        {education.map((edu) => (
+          <li
+            class="scroll-reveal md:pl-12 relative"
+           
+          >
+            <div
+              class="hidden md:flex absolute left-0 top-1 w-7 h-7 rounded-full bg-card border-2 border-primary items-center justify-center"
+              aria-hidden="true"
+            >
+              <div class="w-2 h-2 rounded-full bg-primary"></div>
+            </div>
+
+            <div class="bg-card rounded-2xl border border-border p-5 md:p-6 hover:border-primary/30 transition-colors">
+              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                <div>
+                  <h3 class="text-lg font-display text-foreground">{edu.degree}</h3>
+                  <p class="text-primary font-medium">{edu.institution}</p>
+                </div>
+                <div class="flex flex-col sm:items-end gap-1">
+                  <time class="text-sm text-muted-foreground whitespace-nowrap">{edu.period}</time>
+                  <span class="text-xs text-muted-foreground">{edu.location}</span>
+                </div>
+              </div>
+
+              {edu.achievements && edu.achievements.length > 0 && (
+                <ul class="space-y-1.5 mt-3">
+                  {edu.achievements.map((item) => (
+                    <li class="flex items-start gap-2 text-sm text-foreground/80">
+                      <span class="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-primary/60" aria-hidden="true"></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>

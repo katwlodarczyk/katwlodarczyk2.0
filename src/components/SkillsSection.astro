@@ -1,0 +1,40 @@
+---
+import { skills } from "../lib/data";
+
+const skillGroups = [
+  { label: "Languages", items: skills.programmingLanguages },
+  { label: "Frontend", items: skills.frontendDevelopment },
+  { label: "Backend", items: skills.backendDevelopment },
+  { label: "Databases", items: skills.databaseAndStorage },
+  { label: "Tools", items: skills.toolsAndServices },
+];
+---
+
+<section id="skills" class="py-12 md:py-16 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-4 md:px-6">
+    <h2
+      class="scroll-reveal text-2xl md:text-3xl font-display mb-8 text-foreground"
+     
+    >
+      <span aria-hidden="true">🛠️ </span><span class="text-highlight">Skills</span>
+    </h2>
+
+    <div class="flex flex-col gap-4">
+      {skillGroups.map(({ label, items }) => (
+        <div
+          class="scroll-reveal flex flex-col sm:flex-row sm:items-start gap-3 py-4 border-b border-border last:border-0"
+         
+        >
+          <span class="text-xs font-semibold uppercase tracking-wider text-muted-foreground w-28 flex-shrink-0 pt-1">{label}</span>
+          <div class="flex flex-wrap gap-2">
+            {items.map((skill) => (
+              <span class="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary border border-primary/20 font-medium">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

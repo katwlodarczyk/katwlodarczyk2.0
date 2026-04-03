@@ -1,0 +1,43 @@
+---
+import { personalInfo } from "../lib/data";
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-border mt-16">
+  <div class="max-w-5xl mx-auto px-4 md:px-6 py-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+      <p>© {year} {personalInfo.name}</p>
+      <div class="flex items-center gap-4">
+        <a
+          href={personalInfo.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+        >
+          GitHub
+        </a>
+        <a
+          href={personalInfo.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+        >
+          LinkedIn
+        </a>
+        <a
+          href={`mailto:${personalInfo.email}`}
+          class="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+        >
+          Email
+        </a>
+      </div>
+      <a
+        href="#"
+        class="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+        aria-label="Back to top"
+      >
+        ↑ Back to top
+      </a>
+    </div>
+  </div>
+</footer>

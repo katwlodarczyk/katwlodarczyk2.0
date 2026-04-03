@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --radius: 0.625rem;
+
+  /* Brand colours */
+  --brand-purple: #7675B9;
+  --brand-pink: #FF8FBB;
+
+  /* Light mode — matches portfolio-4.0 (oklch(1 0 0) = #ffffff) */
+  --background: #ffffff;
+  --foreground: #1c1c1c;
+  --card: #ffffff;
+  --card-foreground: #1c1c1c;
+  --primary: #7675B9;
+  --primary-foreground: #ffffff;
+  --secondary: #FF8FBB;
+  --secondary-foreground: #ffffff;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent: #7675B9;
+  --accent-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #7675B9;
+}
+
+.dark {
+  /* Dark mode — matches portfolio-4.0 (oklch(0.145 0 0) ≈ #1e1e1e) */
+  --background: #1e1e1e;
+  --foreground: #fafafa;
+  --card: #292929;
+  --card-foreground: #fafafa;
+  --primary: #9998d4;
+  --primary-foreground: #1e1e1e;
+  --secondary: #FF8FBB;
+  --secondary-foreground: #1e1e1e;
+  --muted: #3a3a3a;
+  --muted-foreground: #a1a1aa;
+  --accent: #9998d4;
+  --accent-foreground: #1e1e1e;
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: #9998d4;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: "Lora", Georgia, serif;
+  --font-display: "Permanent Marker", cursive;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-pink: var(--brand-pink);
+}
+
+/* Scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-reveal-delay-1 { transition-delay: 0.1s; }
+.scroll-reveal-delay-2 { transition-delay: 0.2s; }
+.scroll-reveal-delay-3 { transition-delay: 0.3s; }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-highlight {
+    position: relative;
+    display: inline;
+    padding: 0 4px 0 2px;
+  }
+  .text-highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent 52%, rgba(255, 143, 187, 0.45) 52%);
+    filter: url(#highlight-rough);
+    z-index: -1;
+    border-radius: 2px;
+  }
+  .bg-hero-gradient {
+    background-color: var(--background);
+    background-image: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      rgba(120, 119, 198, 0.3),
+      transparent
+    );
+  }
+}
+
+/* Prose-like styles for blog article bodies */
+@layer components {
+  .prose-blog h2 {
+    @apply text-2xl font-display mt-8 mb-4 text-foreground;
+  }
+  .prose-blog h3 {
+    @apply text-xl font-display mt-6 mb-3 text-foreground;
+  }
+  .prose-blog p {
+    @apply mb-4 leading-relaxed text-foreground/90;
+  }
+  .prose-blog ul {
+    @apply list-disc list-inside mb-4 space-y-1 text-foreground/90;
+  }
+  .prose-blog ol {
+    @apply list-decimal list-inside mb-4 space-y-1 text-foreground/90;
+  }
+  .prose-blog li {
+    @apply leading-relaxed;
+  }
+  .prose-blog code {
+    @apply bg-primary/10 text-foreground font-mono text-sm px-1.5 py-0.5 rounded border border-primary/20;
+  }
+  .prose-blog pre {
+    @apply bg-muted rounded-xl p-4 mb-4 overflow-x-auto border border-border;
+  }
+  .prose-blog pre code {
+    @apply bg-transparent p-0 text-foreground border-0;
+  }
+  .prose-blog a {
+    @apply text-primary underline underline-offset-2 hover:text-accent transition-colors;
+  }
+  .prose-blog blockquote {
+    @apply border-l-4 border-primary pl-4 italic text-muted-foreground my-4;
+  }
+  .prose-blog strong {
+    @apply font-semibold text-foreground;
+  }
+  .prose-blog hr {
+    @apply border-border my-8;
+  }
+}

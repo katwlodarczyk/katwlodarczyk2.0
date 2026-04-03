@@ -1,0 +1,36 @@
+---
+import { awards } from "../lib/data";
+---
+
+<section id="awards" class="py-12 md:py-16 scroll-mt-20">
+  <div class="max-w-5xl mx-auto px-4 md:px-6">
+    <h2
+      class="scroll-reveal text-2xl md:text-3xl font-display mb-8 text-foreground"
+     
+    >
+      <span aria-hidden="true">🏆 </span><span class="text-highlight">Awards</span>
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {awards.map((award, i) => (
+        <div
+          class={`scroll-reveal scroll-reveal-delay-${i + 1} bg-card rounded-2xl border border-border p-6 hover:border-primary/30 transition-colors flex items-start gap-4`}
+         
+        >
+          <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-secondary/20 border border-secondary/30 flex items-center justify-center text-2xl" aria-hidden="true">
+            🥇
+          </div>
+          <div>
+            <h3 class="font-display text-foreground">{award.name}</h3>
+            <p class="text-sm text-primary mt-0.5">{award.issuer}</p>
+            <div class="flex items-center gap-2 mt-1.5">
+              <time class="text-xs text-muted-foreground">{award.date}</time>
+              <span class="text-xs text-muted-foreground">·</span>
+              <span class="text-xs text-muted-foreground">🇬🇧 {award.type}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
