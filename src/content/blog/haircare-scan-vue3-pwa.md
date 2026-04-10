@@ -4,7 +4,7 @@ date: 2022-05-11
 excerpt: "Crème de la crème project summarising my three years at university — a final major project built with Vue3, Firebase, and Tesseract.js to help people decode hair care ingredient lists."
 category: "Projects"
 tags: ["vue3", "pwa", "firebase", "figma", "final major project"]
-image: "https://katcodes.blog/wp-content/uploads/2022/05/Hair-care-scan-presentation.png"
+image: "/blog/images/Hair-care-scan-presentation.png"
 ---
 
 And here it is, crème de la crème project summarising my three years at university — a final major project (FMP).

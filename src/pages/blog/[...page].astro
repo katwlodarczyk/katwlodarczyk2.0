@@ -7,7 +7,7 @@ export async function getStaticPaths({ paginate }) {
   const posts = (await getCollection("blog")).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
   );
-  return paginate(posts, { pageSize: 12 });
+  return paginate(posts, { pageSize: 11 });
 }
 
 const { page } = Astro.props;
@@ -29,18 +29,18 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
         <span class="mx-2">/</span>
         <span class="text-foreground">Blog</span>
       </nav>
-      <h1 class="text-3xl md:text-4xl font-display text-foreground mb-3">
+      <h1 class="scroll-reveal text-3xl md:text-4xl font-display text-foreground mb-3">
         <span class="text-highlight">Blog</span>
       </h1>
-      <p class="text-lg text-muted-foreground">
+      <p class="scroll-reveal scroll-reveal-delay-1 text-lg text-muted-foreground">
         Thoughts on web development, design, and the tools I use day-to-day.
       </p>
 
       <!-- Category pills -->
-      <div class="flex flex-wrap gap-2 mt-5">
+      <div class="scroll-reveal scroll-reveal-delay-2 flex flex-wrap gap-2 mt-5">
         <a
           href="/blog"
-          class="px-3 py-1 rounded-full text-xs font-medium text-foreground border border-primary/40 hover:border-primary transition-colors"
+          class="px-3 py-1 rounded-full text-xs font-medium text-foreground bg-secondary/15 border border-secondary transition-colors"
         >
           All
         </a>
@@ -60,7 +60,13 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         {posts.map((post, i) => (
           <BlogCard
-            class={`${page.currentPage === 1 && i === 0 ? "md:col-span-2" : ""}`}
+            class={[
+              page.currentPage === 1 && i === 0 ? "md:col-span-2" : "",
+              "scroll-reveal",
+              i === 1 ? "scroll-reveal-delay-1" : "",
+              i === 2 ? "scroll-reveal-delay-2" : "",
+              i === 3 ? "scroll-reveal-delay-3" : "",
+            ].filter(Boolean).join(" ")}
             title={post.data.title}
             date={post.data.date}
             excerpt={post.data.excerpt}
@@ -101,7 +107,7 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
                 "w-9 h-9 flex items-center justify-center rounded-lg text-sm font-medium transition-colors",
                 num === page.currentPage
                   ? "bg-primary text-primary-foreground"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  : "text-muted-foreground hover:text-foreground hover:bg-secondary/15"
               ]}
             >
               {num}

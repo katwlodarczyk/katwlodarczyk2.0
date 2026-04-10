@@ -4,7 +4,7 @@ date: 2020-10-21
 excerpt: "Hello, beautiful people of the internet. How’s the life going? Mines, as you can probably deduct from lack of posts in the recent months, is very busy, engaging and demanding. New job, second year of uni, very active 4 year old and a global pandemic on top of all that! But I don’t write that as an excuse or for someone to pat me on the back…."
 category: "Personal"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/10/top-tips-8.png"
+image: "/blog/images/top-tips-8.png"
 ---
 
 Hello, beautiful people of the internet. How’s the life going?
@@ -15,7 +15,7 @@ If you’ve ever thought how on Earth I am able to manage working, attending ful
 It’s so easy to feel like there is too much going on around,  and a cartoony steam will go out of your ears any minute now… Instant access and constant flow of various information adds up to the mix. 
 And that’s why I’ve written down my go to solutions to reduce stress-load to a minimum. I hope it will be helpful to someone.
 
-![](https://katcodehome.files.wordpress.com/2020/10/manager__monochromatic-1.png)
+![](/blog/images/manager__monochromatic-1.png)
 
 Here are my top tips to stay on top of your life and don’t go crazy:
 

@@ -3,14 +3,12 @@ title: "2021: the summary"
 date: 2021-12-09
 excerpt: "Another year comes to an end. Can you believe this is the third yearly summary on this blog? A year of challenges and milestones — but also a lot of growth."
 category: "Personal"
-tags: ["life", "yearly summary"]
-image: "https://katcodes.blog/wp-content/uploads/2021/12/moritz-knoringer-Vn1m4tSCUt0-unsplash-1.jpg"
+tags: ["life", "yearly_summary"]
+image: "/blog/images/moritz-knoringer-Vn1m4tSCUt0-unsplash-1.jpg"
 ---
 
-Another year comes to an end.
-Can you believe that this is a third yearly summary on this blog? What a journey!
-
-What can I say about 2021? To be honest, I'm quite glad it's almost over!
+### What can I say about 2021? 
+To be honest, I'm quite glad it's almost over!
 
 It's been a very challenging time on multiple levels. A year of sad news and life changing milestones, but reflecting on them all now I also see growth. Opening the windows where the doors have been shut. Changing directions and paths, and finding out that the answers are usually within yourself.
 

@@ -4,7 +4,7 @@ date: 2021-10-20
 excerpt: "GitHub lets you create a personal README to showcase who you are — a bit like a bio field, but less boring and with much more potential. Here's how to make one."
 category: "Tips"
 tags: ["github", "tips", "developer profile"]
-image: "https://katcodes.blog/wp-content/uploads/2021/10/README-on-GitHub-1.png"
+image: "/blog/images/README-on-GitHub-1.png"
 ---
 
 Some time ago GitHub added a feature to create our own personal README, to showcase who we are, our skills, passions and goals. A bit like a bio field, but less boring and with much more potential!

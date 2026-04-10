@@ -2,7 +2,7 @@
 title: "Building a PWA with Vue 3 and Firebase: Lessons from Haircare Scan"
 date: 2024-09-20
 excerpt: "How I built a PWA ingredient scanner using Tesseract.js OCR, Vue 3 Composition API, and Firebase — what worked, what didn't, and what the BCS award meant to me."
-category: "Case Study"
+category: "Projects"
 tags: ["vue3", "firebase", "pwa", "tesseract", "javascript"]
 ---
 
@@ -56,7 +56,7 @@ The parsing is imperfect — OCR produces noise, and ingredient lists use incons
 
 The ingredient database is a flat collection in Firestore:
 
-```
+```md
 /ingredients/{ingredientId}
   name: string
   aliases: string[]

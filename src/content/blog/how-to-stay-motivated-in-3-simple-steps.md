@@ -4,7 +4,7 @@ date: 2021-01-28
 excerpt: "In my opinion, motivation and focus are keys to success. No matter what your end goal is, when you are motivated, you have a perseverance to keep on going. Being focused also helps when things aren’t as smooth as anticipated. In this blog post I will share 3 simple steps that help me stay motivated and focused."
 category: "Tutorial"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2021/01/how-to-stay-motivated-in-3-simple-steps-8-1.png"
+image: "/blog/images/how-to-stay-motivated-in-3-simple-steps-8-1.png"
 ---
 
 In my opinion, motivation and focus are the keys to success. No matter what your end goal is, when you are motivated, you have a perseverance to keep on going. Being focused also helps when things aren’t as smooth as anticipated. 
@@ -12,7 +12,7 @@ In this blog post I will share 3 simple steps that help me stay motivated and fo
 
 #### 1. Set a goal
 
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2021/01/Croods-The-Feedback.png)
+![](/blog/images/Croods-The-Feedback.png)
 
 This is probably the most important thing you can do to help yourself. When you know what you want to achieve, you are able to find a way to do it. 
 **And remember, every big goal is in reality a bunch of smaller ones**. So dream big, and then set much smaller goals that will help you reach your dream. 
@@ -30,7 +30,7 @@ Our brains will find a way to stay comfortable, even at a cost of jeopardising o
 
 #### 3. Celebrate
 
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2021/01/Croods-Party-Time.png)
+![](/blog/images/Croods-Party-Time.png)
 
 Celebrate EVERY little goal. When you accomplish something, recognise it and reward yourself! Order a take-away, run a bubble bath, buy a box of fancy chocolates… What ever makes you happy. It doesn’t have to be huge or expensive, just something for you to feel special. Celebrating releases a dopamine, a feel-good chemical. This will give us a boost of confidence and motivation to reach another goal in the future.
 

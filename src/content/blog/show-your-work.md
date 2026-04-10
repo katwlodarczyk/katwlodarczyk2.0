@@ -4,7 +4,7 @@ date: 2019-11-03
 excerpt: "All right… first posts are always weird and hard to write, but I will do my best to make it as little awkward as possible. Here we go! Hello! I’m Kat. As you can read in a little bio on the right of the page, I’m a first year student of Web Design and Development...."
 category: "Personal"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2019/11/patrick-tomasso-oaqk7qqnh_c-unsplash-scaled.jpg"
+image: "/blog/images/patrick-tomasso-oaqk7qqnh_c-unsplash-scaled.jpg"
 ---
 
 All right… first posts are always weird and hard to write, but I will do my best to make it as little awkward as possible. Here we go!
@@ -13,7 +13,7 @@ Hello! I’m Kat. As you can read in a little bio on the right of the page, I’
 
 Ok, going back to why we are all here. I red a great book recently. It’s actually one of the books from one of my uni modules’s reading list, so thank u, Martin, for putting it up there so I could discover it. The book I’m talking about is “Show your work!” by Austin Kleon.
 
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2019/11/img_0605.jpg)
+![](/blog/images/img_0605.jpg)
 
 I decided to listen to the book’s advice and create a little place in the Internet for my development. I will take u behind the scenes of the stuff I do, show my little creations and share more or less organised thoughts of a mature student.
 

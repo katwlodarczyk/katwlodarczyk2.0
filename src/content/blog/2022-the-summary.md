@@ -3,11 +3,9 @@ title: "2022: the summary"
 date: 2022-12-19
 excerpt: "How come it's already the end of the year? 2022 has been one of the busiest years for me — and also one of the greatest. Time for the yearly summary!"
 category: "Personal"
-tags: ["life", "yearly summary"]
-image: "https://katcodes.blog/wp-content/uploads/2022/12/moritz-knoringer-LPj8vt3EoXE-unsplash-scaled.jpg"
+tags: ["life", "yearly_summary"]
+image: "/blog/images/moritz-knoringer-LPj8vt3EoXE-unsplash-scaled.jpg"
 ---
-
-How come it's already the end of the year? 2022 has been one of the busiest years for me. It's a good thing though, as looking onto my goals list, it has also been one of the greatest! Time for the yearly summary!
 
 ## Awesome things that I made happen this year:
 

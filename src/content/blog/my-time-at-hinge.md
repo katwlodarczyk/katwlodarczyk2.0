@@ -4,7 +4,7 @@ date: 2021-12-17
 excerpt: "After a year and a half, my journey at Hinge came to an end. I am thankful for the time, the people, the projects, and all the knowledge I gained — and it all started with a tweet."
 category: "Personal"
 tags: ["career", "agency", "internship", "web development"]
-image: "https://katcodes.blog/wp-content/uploads/2021/10/2.png"
+image: "/blog/images/2_313eb7.png"
 ---
 
 After a year and a half, my time at Hinge came to an end. I am thankful for the time I spent there, the people I met, the projects I got to work on, and all the knowledge I gained.

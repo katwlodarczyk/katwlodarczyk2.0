@@ -4,7 +4,7 @@ date: 2020-11-25
 excerpt: "Do you use Figma? If you do, then this list is just for you! Big list of my favourite figma plugins. They will make your work easier, faster and much more enjoyable!"
 category: "Tips"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/11/huge-list-of-figma-plugins-2.png"
+image: "/blog/images/huge-list-of-figma-plugins-2.png"
 ---
 
 Do you use Figma? If you do, then this list is just for you! Big list of my favourite figma plugins. They will make your work easier, faster and much more enjoyable!
@@ -13,7 +13,7 @@ Do you use Figma? If you do, then this list is just for you! Big list of my favo
 
 Type in any brand and in seconds you have access to its logo, brand colours, brand fonts and Image. Saves you a lot of time googling that stuff  manually! They even had katvonwiesendorf.com (my photography blog) on, so I’m impressed!
 
-![](https://katcodehome.files.wordpress.com/2020/11/1h.jpg)
+![](/blog/images/1h.jpg)
 
 My rating:
 
@@ -45,7 +45,7 @@ Rating: 4 out of 5.
 
 This is a plugin you didn’t know you needed in your life until you use it for the first time! I absolutely love Blobs, few clicks and you have a lovely shaped blob to use in your design. Adds a nice depth and a lot of coolness to your work!
 
-![](https://katcodehome.files.wordpress.com/2020/11/1b.jpg)
+![](/blog/images/1b.jpg)
 
 My rating:
 
@@ -77,7 +77,7 @@ Rating: 5 out of 5.
 
 Enormous collection of icons to use in your designs. Export as and svg and job done! Simple and easy. 9/10 times you will find the icon you need there.
 
-![](https://katcodehome.files.wordpress.com/2020/11/1c.jpg)
+![](/blog/images/1c.jpg)
 
 My rating:
 
@@ -110,7 +110,7 @@ Rating: 4.5 out of 5.
 My love for illustrations and illustrated people began from this plugin. Choose ready made person or create you own using components, change colours and there you have a little person! There are certain limitations (hairstyles for example) but it’s still really cool plugin worth installing.
 For observant readers, yes, the illustration on my banner is made using this plugin! 
 
-![](https://katcodehome.files.wordpress.com/2020/11/1d.jpg)
+![](/blog/images/1d.jpg)
 
 My rating:
 
@@ -142,7 +142,7 @@ Rating: 5 out of 5.
 
 The newest find of mine, definitely useful, just didn’t really had an idea where I could actually use it! 😂  This plugin creates 2D metaball objects from circles, so when you need a meta shape, it will be a godsend for you. 
 
-![](https://katcodehome.files.wordpress.com/2020/11/1k.jpg)
+![](/blog/images/1k.jpg)
 
 My rating:
 
@@ -174,7 +174,7 @@ Rating: 3 out of 5.
 
 Nice little plugin for those times when you quickly need some dummy logo. They are still in beta, so options are limited, but I still found it useful to have. Hopefully their collection will grow overtime.
 
-![](https://katcodehome.files.wordpress.com/2020/11/1e.jpg)
+![](/blog/images/1e.jpg)
 
 My rating:
 
@@ -206,7 +206,7 @@ Rating: 3.5 out of 5.
 
 Get instant coolness to your work by adding some waves! Few clicks and job done! Possibilities here are endless, but there is one downfall- you may spend a lot of time just generating more waves and not be able to choose just one!  🙊
 
-![](https://katcodehome.files.wordpress.com/2020/11/1f.jpg)
+![](/blog/images/1f.jpg)
 
 My rating:
 
@@ -238,7 +238,7 @@ Rating: 5 out of 5.
 
 Select a shape inside a frame, tick some options and choose number of rows and columns… ta-daaah! Cool background done! Then you can change colour of some shapes (or not) People will think you’ve spend ages on it.
 
-![](https://katcodehome.files.wordpress.com/2020/11/1g.jpg)
+![](/blog/images/1g.jpg)
 
 My rating:
 
@@ -270,7 +270,7 @@ Rating: 5 out of 5.
 
 For those wanting a nice colour scheme, but not really good at matching colours (or just not having time to think about it!) This plugin provides you with a huge colour collection! It’s a yes from me! 
 
-![](https://katcodehome.files.wordpress.com/2020/11/1j.jpg)
+![](/blog/images/1j.jpg)
 
 My rating:
 
@@ -302,7 +302,7 @@ Rating: 5 out of 5.
 
 Select one of few objects, choose number of rows and columns and your have you own random pattern. The example below is done with simple shapes, so it may not be breathtaking, but imagine doing a pattern with different illustrations (like humaaans for figma people?) 
 
-![](https://katcodehome.files.wordpress.com/2020/11/1l.jpg) 
+![](/blog/images/1l.jpg) 
 
 My rating:
 
@@ -336,37 +336,37 @@ Rating: 3 out of 5.
 
 Awesome recommendation by [@BeckyFumagall](https://twitter.com/beckyfumagall?lang=en), this plugin is a library full of dummy data, avatars and icons. You can also sign up to personalise your home tab to keep all your favourites in one place for a quick access. I’m definitely gonna use this plugin a lot!
 
-![](https://katcodehome.files.wordpress.com/2020/11/11a.jpg)
+![](/blog/images/11a.jpg)
 
 ## Content Buddy
 
 Another from [Becky](https://twitter.com/beckyfumagall?lang=en),  this plugin lets you quickly replace text content with a different one. I’m sure it’s useful when your designs have a lot of different text areas.
 
-![](https://katcodehome.files.wordpress.com/2020/11/11b.jpg)
+![](/blog/images/11b.jpg)
 
 ## Font Replacer
 
 The last recommended by [Becky](https://twitter.com/beckyfumagall?lang=en). I was excited to try this one out, only to be a little bit disappointed by how it’s working. I was annoyed to have to have a text area selected **before** opening the plugin, not being able to see how different fonts looks like and then when you replace the font, the plugin closes down by itself… For someone really undecided who likes to try different fonts it is quite time-consuming.
 
-![](https://katcodehome.files.wordpress.com/2020/11/11c.jpg)
+![](/blog/images/11c.jpg)
 
 ## Figma Manager
 
 [Thalion](https://twitter.com/thalion_pb)‘s recommendation. This plugin lets your organise your personal library of components, colours, texts and effect styles. The downfall is the price- 24$ a year for a personal licence. 
 
-![](https://katcodehome.files.wordpress.com/2020/11/11d.jpg)
+![](/blog/images/11d.jpg)
 
 ## Toolabs Design System Manager
 
 Recommended by [Namik Ozgur Aydin](https://twitter.com/applinist) and I’m so happy to discover this system manager! It’s free and really powerful! The plugin is really intuitive, fast and you can personalise everything to suit your needs. You need to create an account prior to using it.
 
-![](https://katcodehome.files.wordpress.com/2020/11/11e.jpg)
+![](/blog/images/11e.jpg)
 
 ## Autoflow
 
 Gercek’s suggestion. Very good option for any flowcharts. I am definitely gonna use this one now instead of draw.io 
 
-![](https://katcodehome.files.wordpress.com/2020/11/11h.jpg)
+![](/blog/images/11h.jpg)
 
 #### What’s your favourite figma plugin?
 

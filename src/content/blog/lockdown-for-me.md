@@ -4,14 +4,14 @@ date: 2020-06-07
 excerpt: "Lockdown slowly eases, so I thought I will reflect on those last, really weird 3,5 months. As everyone remembers, on March 23rd almost everything closed down and it seemed like the world is coming to an end. It has been a very stressful time for a lot of people, including myself. Workplaces shut, shelves in..."
 category: "Personal"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/06/glen-carrie-af-gyalxzww-unsplash-scaled.jpg"
+image: "/blog/images/glen-carrie-af-gyalxzww-unsplash-scaled.jpg"
 ---
 
 Lockdown slowly eases, so I thought I will reflect on those last, really weird 3,5 months.
 
 As everyone remembers, on March 23rd almost everything closed down and it seemed like the world is coming to an end. It has been a very stressful time for a lot of people, including myself. Workplaces shut, shelves in the grocery stores emptied, and all you could hear in tv was the constant news about more people dying from Covid-19… it was a lot to take in. I was worried whether or not we have enough food, money to pay bills, and what would happen with my daughter in the extreme case when both I and my husband catch the virus and end up in the hospital (as we have no relatives living in the UK who could take care of her).
 
-![](https://katcodehome.files.wordpress.com/2020/06/global_warming_monochromatic.png)
+![](/blog/images/global_warming_monochromatic.png)
 
 Thankfully, I still had to complete assignments and exams to finish my uni year, and it has helped me deal with scary thoughts at the beginning of lockdown. They gave me some sort of purpose and kept most worries at bay.
 
@@ -33,7 +33,7 @@ I know that everyone’s situation is different, and people deal with emotions i
 
 This blog’s main purpose is to keep track of my dev journey so I thought appropriate to document it.
 
-![](https://katcodehome.files.wordpress.com/2020/06/focused_working_monochromatic.png)
+![](/blog/images/focused_working_monochromatic.png)
 
 *Featured photo by [Glen Carrie](https://unsplash.com/@glencarrie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/lockdown?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 

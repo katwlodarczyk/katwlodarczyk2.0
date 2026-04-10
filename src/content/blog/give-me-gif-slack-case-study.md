@@ -1,11 +1,12 @@
 ---
 title: "Give me gif, Slack – case study"
 date: 2021-01-15
-excerpt: "The aim of this case study has focused on creating a contemporary design concept that would solve the issue of poor accessibility to gifs on Slack."
+excerpt: "A UX/UI case study exploring how to improve Slack's cumbersome gif access. From research and problem analysis to designing an intuitive gif button solution that reduces search time from minutes to seconds."
 category: "Projects"
-tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/12/file-cover-1.png"
+tags: ["case_study", "slack", "uni"]
+image: "/blog/images/file-cover-1.png"
 ---
+
 
 The aim of this case study has focused on creating a contemporary design concept that would solve the issue of poor accessibility to gifs on Slack.
 
@@ -18,7 +19,7 @@ Emoji and animated messages have become a part of our writing culture. Sceptics 
 Let’s start by shining a bit of light on Slack itself. It is a channel-based messaging platform. Create a group or accept an invitation to an existing one, and then send messages, share files, call and connect other apps (e.g Github or DropBox). Mostly used in workplaces to communicate within a team. At the agency I work for, we have one general channel and one for every project we work on. This set up helps us work as a team, whether we are based in the office, working from home or from a different city.
 The current situation around the world and increased remote working make platforms like this even more important than ever, enabling communication with other members of the team.
 
-![slack desktop window](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/07td46ju7p6llvb0qgwc5vf-1..1569469968.png)
+![slack desktop window](/blog/images/07td46ju7p6llvb0qgwc5vf-1..1569469968.png)
 *https://uk.pcmag.com/productivity-2/40141/slack*
 
 ## The challenge
@@ -26,7 +27,7 @@ The current situation around the world and increased remote working make platfor
 As mentioned in the introduction, short, animated videos have become extremely popular and widely used to quickly express our thoughts and ideas. Instead of writing a long, wordy message that would perfectly describe our feelings, we can send a meme that does just that.
 Using gifs and memes on Slack is possible, but extremely time-consuming and not user-friendly at all. Let’s have a look at how to add a gif to a conversation on Slack at the moment:
 
-![gifs on slack at the moment screen cast](https://katcodehome.files.wordpress.com/2020/11/rpreplay_final1603975359.gif)
+![gifs on slack at the moment screen cast](/blog/images/rpreplay_final1603975359.gif)
 
 1. Click on the lightning icon
 2. Look for Giphy and click the link
@@ -40,13 +41,15 @@ Estimated time to find your meme: WAY TO LONG.
 
 ## Gifs on other platforms
 
+### Competitive Analysis
+
 Facebook, WhatsApp or Twitter are only the few that have a messaging feature. All mentioned above have a gif button directly on the message tab, allowing users to quickly browse for a perfect animated message to add to the conversation. General styling and the number of extra features, like a search bar, favourite button, or grouping by a category varies throughout, but the ability to pain-free access to wanted content is present.
 
-![facebook gif](https://katcodehome.files.wordpress.com/2020/11/picture-1.png)
+![facebook gif](/blog/images/picture-1.png)
 
-![whatapp gif](https://katcodehome.files.wordpress.com/2020/11/picture-12png.png)
+![whatapp gif](/blog/images/picture-12png.png)
 
-![twitter gif ](https://katcodehome.files.wordpress.com/2020/11/picture-2.png)
+![twitter gif ](/blog/images/picture-2.png)
 
 Estimated time to find what you are looking for: approx. 10-30 seconds.
 
@@ -57,11 +60,13 @@ Slack is available for desktop and as a mobile app, therefore the concept needs 
 
 ## The solution
 
-The analysis of the current design and how similar platforms are dealing with the issue have clarified, that the solution for observed time consuming and stressful access to gifs and memes should be **an enhancement of the current system with a Gif button. **
+The analysis of the current design and how similar platforms are dealing with the issue have clarified, that the solution for observed time consuming and stressful access to gifs and memes should be **an enhancement of the current system with a Gif button.**
 So many applications are using this method for quick, easy access to gifs, and reusing that familiar design is, in my opinion, the way to go.
 
-> *“*In design, by making things that behave in a certain way appear as expected, we help our users make the most of their cognitive cache.  In other words, **we don’t make them think**.”Jason Grigsby,  Progressive web apps
+> “In design, by making things that behave in a certain way appear as expected, we help our users make the most of their cognitive cache. In other words, **we don’t make them think**.”
+Jason Grigsby,  Progressive web apps
 
+### Benefits of the Solution
 The benefits of adding the gif button directly to the message window are enormous. Increased user experience will be visible on multiple spectrums:
 
 - access to multiple gifs at the same time to allow comparison
@@ -72,40 +77,44 @@ The benefits of adding the gif button directly to the message window are enormou
 
 ### Design enhancement process
 
+#### Brainstorming Phase
+
 The process of designing the enhancement mentioned above have started from the brainstorming phase. This step is crucial to explore possible options, get inspired, and quickly iterate through different ideas.
 
 Deliverables from this phase are rough sketches of the concept:
 
-![desktop window sketches](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/frame-1-desktop.png)
+![desktop window sketches](/blog/images/frame-1-desktop.png)
 *Desktop window sketches*
 
-![mobile window sketches](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/frame-2-mobile-1.png)
+![mobile window sketches](/blog/images/frame-2-mobile-1.png)
 *Mobile window sketches*
+
+#### Figma Prototyping
 
 Next, the Slack window has been created in Figma. The overlay technique has been used to ensure the right measurements and spacing of the components.
 
-![slack window](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/slack-window.jpg)
+![slack window](/blog/images/slack-window.jpg)
 *Slack window. Image used as a guide from: https://slack.com/intl/en-gb/help/articles/360043092173-The-Slack-experience-for-desktop*
 
 Gif button component has been created in the style matching other buttons on the message tab.
 
-![gif button design](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/gif-button.jpg)
+![gif button design](/blog/images/gif-button.jpg)
 *Gif button design*
 
 Gif button was then added onto a base layout, keeping in mind the spacing between the other elements.
 
-![base desktop layout enhanced with a gif button](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/base-with-the-gif-button.png)
+![base desktop layout enhanced with a gif button](/blog/images/base-with-the-gif-button.png)
 *Base layout enhanced with a Gif button*
 
 Lastly, the design of the open gif bar has been created for both desktop and mobile windows.
 
-![base desktop layout with an open gif bar](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/base-desktop-with-open-gif-bar.png)
+![base desktop layout with an open gif bar](/blog/images/base-desktop-with-open-gif-bar.png)
 *Base layout with an open Gif bar*
 
-![base mobile layout](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/base-mobile-1.png)
+![base mobile layout](/blog/images/base-mobile-1.png)
 *Base mobile layout*
 
-![base mobile layout with open gif bar](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/base-mobile-with-open-gif-bar-2.png)
+![base mobile layout with open gif bar](/blog/images/base-mobile-with-open-gif-bar-2.png)
 *Base mobile layout with open gif bar*
 
 Deliverables from this phase are desktop and mobile designs featuring a gif button. 

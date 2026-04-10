@@ -4,7 +4,7 @@ date: 2020-04-15
 excerpt: "Since most of my days are now split between inventing things we can do while locked inside the house, and which will satisfy a short-attention-span of a three-year-old, and finishing all my uni assignments, I have literally no time (or power) for any extra-curriculum learning. Sad, but that’s how it is sometimes. After all, we are all just humans, right? Anyway, I thought I will tell u a little story of how I got into Uni after I thought I never would be able to. I wanted to write this post for a long time, to shine some light on my past and maybe to inspire someone in a similar situation to mine."
 category: "Personal"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/04/vasily-koloda-8cqdvpuo_ki-unsplash-scaled.jpg"
+image: "/blog/images/vasily-koloda-8cqdvpuo_ki-unsplash-scaled.jpg"
 ---
 
 Since most of my days are now split between inventing things we can do while locked inside the house, and which will satisfy a short-attention-span of a three-year-old, and finishing all my uni assignments, I have literally no time (or power) for any extra-curriculum learning. Sad, but that’s how it is sometimes. After all, we are all just humans, right?
@@ -15,7 +15,7 @@ Anyway, I thought I will tell u a little story of how I got into Uni after I tho
 
 okay, not beginning beginning, just about 9 years ago. I was 18 years old, still living in Poland. As most school leavers, I had huge dreams. I planned on studying product design and going abroad to live in the UK (English language countries always fascinated me for some reason) I’ve met my husband back then too, and as it turned out, he also planned on moving away (stuff straight from the movies, eh? Happens in real life too 😅)  So off we went into the unknown. The reality of trying to live in a totally new country is harsh though, and my plans of applying to uni fall into a second plan, while we were trying to stay afloat, pay bills and well- just live. But every now and again, this unfulfilled dream of having a higher education nudged me and made me feel… incomplete? worse? it’s hard to name this feeling…
 
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2021/05/mel-poole-eo5Hrzyb4D0-unsplash-1.jpg)
+![](/blog/images/mel-poole-eo5Hrzyb4D0-unsplash-1.jpg)
 
 Life went by, we moved a few times from one city to another city and the next one too, trying to find our space in this world (still looking for it 😂🤷‍♀️), we got married and had our daughter. The unfulfilled dream? It was still there bothering me, maybe even more than ever since H. got born. It sounds cheesy, but I wanted her to be proud of me. And I wanted to be proud of me, too. But how on Earth would I be able to go back to school while taking care of a child and working part-time? I was certain this door is closed for me forever. And then.. one of my friends applied and got into uni. That friend also has a child and she was working! She gave me hope and a whole lotta inspiration! (You know who you are, as I was thanking you like million times 😘) I decided I am gonna try myself. You know, if she could pull this off, maybe I could too! My husband and family back in Poland were really supportive of my decision.
 
@@ -33,7 +33,7 @@ I think everything happens for a reason. Those 7 years I spent believing I would
 
 **Live is not a straight line, and it doesn’t matter when you hit certain milestones. Everyone’s story is different and they are all beautiful. We just need to believe in ourselves and be brave to step into the unknown. **
 
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/04/clark-tibbs-oqStl2L5oxI-unsplash-1.jpg)
+![](/blog/images/clark-tibbs-oqStl2L5oxI-unsplash-1.jpg)
 
 **Featured Photo by [Vasily Koloda](https://unsplash.com/@napr0tiv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/uni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
  The post is using:

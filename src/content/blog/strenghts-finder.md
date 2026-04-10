@@ -4,18 +4,18 @@ date: 2020-04-29
 excerpt: "Have you ever heard of the Gallup’s Strengths Finder test? No? Me neither… until this morning. I was browsing the internet looking for something, going from site to site and I got across it. I was intrigued, so started to look into it. The real Gallup’s Test is paid for, but I found a good free alternative to take online. High5 test helps you understand your strengths, and although there are 100 questions to answer, all you have to do is use the slider to say if you strongly agree or strongly disagree with the statement describing a certain behavior. It took me around 10 minutes to complete the test. The results? Well..they didn’t surprise me at all! It was 100% me. And to show you how cool it is to discover your “powers”, I will share my results…."
 category: "Tips"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/04/scott-graham-5fnmwej4taa-unsplash-scaled.jpg"
+image: "/blog/images/scott-graham-5fnmwej4taa-unsplash-scaled.jpg"
 ---
 
 Have you ever heard of the Gallup’s Strengths Finder test? No? Me neither… until this morning.
 
 I was browsing the internet looking for something, going from site to site and I got across it. I was intrigued, so started to look into it. The real Gallup’s Test is paid for, but I found a good free alternative to take online. [High5](https://high5test.com/) test helps you understand your strengths, and although there are 100 questions to answer, all you have to do is use the slider to say if you strongly agree or strongly disagree with the statement describing a certain behavior.
 
-![](https://katcodehome.files.wordpress.com/2020/04/jon-tyson-hhq1lxtuwd8-unsplash.jpg)
+![](/blog/images/jon-tyson-hhq1lxtuwd8-unsplash.jpg)
 
 It took me around 10 minutes to complete the test. The results? Well..they didn’t surprise me at all!** It was 100% me. **To show you how cool it is to discover your “powers”, I will share my results:
 
-![](https://katcodehome.files.wordpress.com/2020/04/img_9781-e1588155946277.png)
+![](/blog/images/img_9781-e1588155946277.png)
 
 Curious to explore them one by one in a bit more depth? Ok…
 

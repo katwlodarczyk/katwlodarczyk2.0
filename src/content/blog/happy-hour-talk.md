@@ -4,7 +4,7 @@ date: 2020-03-25
 excerpt: "As some of you may know, I was supposed to give a talk during a happy hour industry talks today…"
 category: "Personal"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/03/screenshot-2020-03-23-at-12.25.41.png"
+image: "/blog/images/screenshot-2020-03-23-at-12.25.41.png"
 ---
 
 As some of you may know, I was supposed to give a talk during a happy hour industry talks today…

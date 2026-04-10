@@ -4,7 +4,7 @@ date: 2022-01-18
 excerpt: "My first React web app — a student recipe and meal planning app built with React, Tailwind CSS, and Firebase, proving that knowledge transfers well between frameworks."
 category: "Projects"
 tags: ["react", "firebase", "tailwind", "figma", "university"]
-image: "https://katcodes.blog/wp-content/uploads/2022/01/displayscreen-scaled.jpg"
+image: "/blog/images/displayscreen-scaled.jpg"
 ---
 
 My first React web app has been created for one of my university units. Whilst I have the most experience in Vue, this project shows that once you get the hang of one framework (and obviously have an understanding of vanilla JS), the knowledge is easily transferable to other frameworks. Of course, syntax will be different, but the logic is pretty much the same.

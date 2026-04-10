@@ -4,7 +4,7 @@ date: 2022-10-08
 excerpt: "Finally got to process and sit down to write the summary of the third year at uni — the last leg of this great, life-changing journey that university has become."
 category: "Personal"
 tags: ["university", "life", "career"]
-image: "https://katcodes.blog/wp-content/uploads/2022/05/2nd-year-at-uni.png"
+image: "/blog/images/2nd-year-at-uni.png"
 ---
 
 Finally got to process and sit down to write the summary of the third year at uni — the last leg of this great, life-changing journey that university has become. After graduating I jumped into full-time employment, which with the addition of being a parent, leaves no room for much more extra activities. Although I was super happy to finally see the finish line, some part of me was a bit sad that this part of my life is ending.

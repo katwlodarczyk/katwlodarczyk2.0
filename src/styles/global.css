@@ -121,6 +121,23 @@
     z-index: -1;
     border-radius: 2px;
   }
+  .bio-highlight {
+    position: relative;
+    padding: 0.6rem 0.8rem;
+  }
+  .bio-highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 143, 187, 0.45);
+    filter: url(#highlight-rough);
+    border-radius: 3px;
+    z-index: 0;
+  }
+  .bio-highlight p {
+    position: relative;
+    z-index: 1;
+  }
   .bg-hero-gradient {
     background-color: var(--background);
     background-image: radial-gradient(
@@ -155,10 +172,10 @@
     @apply bg-primary/10 text-foreground font-mono text-sm px-1.5 py-0.5 rounded border border-primary/20;
   }
   .prose-blog pre {
-    @apply bg-muted rounded-xl p-4 mb-4 overflow-x-auto border border-border;
+    @apply rounded-xl p-4 mb-4 overflow-x-auto border border-border;
   }
   .prose-blog pre code {
-    @apply bg-transparent p-0 text-foreground border-0;
+    @apply bg-transparent p-0 border-0;
   }
   .prose-blog a {
     @apply text-primary underline underline-offset-2 hover:text-accent transition-colors;
@@ -173,3 +190,4 @@
     @apply border-border my-8;
   }
 }
+

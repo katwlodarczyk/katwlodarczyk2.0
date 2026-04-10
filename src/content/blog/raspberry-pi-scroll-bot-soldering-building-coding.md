@@ -4,7 +4,7 @@ date: 2020-06-02
 excerpt: "Although I am a frontend developer with all my heart, I was always fascinated by how to build robots or wearable technology. I haven’t done anything about it until…."
 category: "Projects"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/06/harrison-broadbent-c3ypscwjb04-unsplash-scaled.jpg"
+image: "/blog/images/harrison-broadbent-c3ypscwjb04-unsplash-scaled.jpg"
 ---
 
 Although I am a frontend developer with all my heart, I was always fascinated by how to build robots or wearable technology.
@@ -15,7 +15,7 @@ I needed something relatively simple for my first project, so products from Kits
 
 I decided on this little scroll bot:
 
-![](https://katcodehome.files.wordpress.com/2020/06/zero-w-kits-square-3_600x.jpg)
+![](/blog/images/zero-w-kits-square-3_600x.jpg)
 
 The package came super-quick, within 24 hrs.
 
@@ -27,7 +27,7 @@ I have never soldered before, and it’s been nerve-racking activity, but after 
 
 The next step was to build the orange robot frame, and here I have followed the original assembly instructions, which you can access via [this link](https://learn.pimoroni.com/tutorial/sandyj/assembling-scroll-bot).
 
-![](https://katcodehome.files.wordpress.com/2020/06/img_9334-e1591044219283.jpg)
+![](/blog/images/img_9334-e1591044219283.jpg)
 
 My robot was complete, but with the end of instructions, ended my knowledge on what to do next 😂
 
@@ -39,7 +39,7 @@ I googled some more and realised I slotted an empty SD card, so of course, nothi
 
 I tried again, the LED light on Pi Zero went on, and I saw a lovely Raspberry logo on the monitor. Victory! 🏆
 
-![](https://katcodehome.files.wordpress.com/2020/06/img_4847.jpg)
+![](/blog/images/img_4847.jpg)
 
 The first step was to install the scroll phat hd python library. For this step and few of my first coding tests, I followed this tutorial from Pimoroni website ([CLICK HERE for tutorial](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-scroll-phat-hd))
 
@@ -47,13 +47,13 @@ At that point, I still had no idea whether my scroll phat hd board works, so whe
 
 The first little projects I did were a simple clock and displaying different strings, both static and scrolled ones.
 
-![](https://katcodehome.files.wordpress.com/2020/06/img_9330.jpg)
+![](/blog/images/img_9330.jpg)
 
-![](https://katcodehome.files.wordpress.com/2020/06/img_8219.jpg)
+![](/blog/images/img_8219.jpg)
 
 For example, to code the clock you can see in the picture above, simple type:
 
-![](https://katcodehome.files.wordpress.com/2020/06/carbon-2-e1591087928547.png)
+![](/blog/images/carbon-2-e1591087928547.png)
 
 As this post turned out quite lengthy, I will go in-depth about the final project for my little scroll bot later this month.
 

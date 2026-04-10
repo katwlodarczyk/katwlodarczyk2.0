@@ -1,17 +1,15 @@
 ---
 title: "2020: the summary"
 date: 2020-12-18
-excerpt: "Another year has gone by and what a year it’s been! Hell of the rollercoaster🎢  ride for most of us, right? As every December, I like to stop for a minute and create a list of things that were awesome, and also some resolutions for the year ahead. It’s really cool to look back in the past and see how we, and everything around has changed…"
+excerpt: "Another year has gone by and what a year it’s been! Hell of the rollercoaster🎢 ride for most of us, right? As every December, I like to stop for a minute and create a list of things that were awesome, and also some resolutions for the year ahead. It’s really cool to look back in the past and see how we, and everything around has changed…"
 category: "Personal"
-tags: []
-image: "https://katcodes.blog/wp-content/uploads/2020/12/kelly-sikkema-zhui4ux6ipy-unsplash-scaled.jpg"
+tags: ["life", "yearly_summary"]
+image: "/blog/images/kelly-sikkema-zhui4ux6ipy-unsplash-scaled.jpg"
 ---
 
-Another year has gone by and what a year it’s been! Hell of the rollercoaster 🎢   ride for most of us, right?
-As every December, I like to pause for a minute, create a list of things that were awesome that year, and also some resolutions for the year ahead. 
-It’s really cool to look back in the past and see how we, and everything around has changed, so let’s look into my last year’s resolutions:
+Let’s look into my last year’s resolutions:
 
-*Going into resolutions for 2020, I would like to:*
+### Going into resolutions for 2020, I would like to:
 
 - *attend another hackathon or two,*
 - *still ace at uni and learn new things (maybe another programming language?),*
@@ -21,8 +19,6 @@ It’s really cool to look back in the past and see how we, and everything aroun
 
 For obvious reasons I only managed to travel a tiny bit in January and unfortunately didn’t attend any more hackathons, but overall I think I did quite all right!  😀
 If you’d like to read my full 2019 summary, you can do so [HERE](https://katcodes.home.blog/2019/12/29/2019-the-summary/).
-
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2020/12/checklist-1.png)
 
 ### Awesome things that happened in 2020:
 

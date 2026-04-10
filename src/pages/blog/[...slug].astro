@@ -20,6 +20,8 @@ const { Content } = await render(post);
   excerpt={post.data.excerpt}
   category={post.data.category}
   tags={post.data.tags}
+  slug={post.slug}
+  image={post.data.image}
 >
   <Content />
 </BlogPost>

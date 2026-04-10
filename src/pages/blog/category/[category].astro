@@ -48,7 +48,7 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
       <div class="flex flex-wrap gap-2 mt-5">
         <a
           href="/blog"
-          class="px-3 py-1 rounded-full text-xs font-medium text-muted-foreground border border-secondary/40 hover:border-secondary transition-colors"
+          class="px-3 py-1 rounded-full text-xs font-medium text-muted-foreground border border-secondary/40 hover:bg-secondary/15 hover:border-secondary hover:text-foreground transition-colors"
         >
           All
         </a>
@@ -59,7 +59,7 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
             class:list={[
               "px-3 py-1 rounded-full text-xs font-medium border transition-colors",
               cat === category
-                ? "text-foreground border-primary/40"
+                ? "bg-secondary/15 text-foreground border-secondary"
                 : "text-muted-foreground border-secondary/40 hover:border-secondary"
             ]}
           >

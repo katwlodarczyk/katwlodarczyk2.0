@@ -4,7 +4,7 @@ date: 2021-06-23
 excerpt: "Another year of being a student has come to an end. 2/3 years complete. I remember thinking three years is a long time, but honestly, time seems to be going a lot quicker nowadays. Being a student (especially while having loads of other responsibilities) is a hard work, but I already start to feel a bit sad that this chapter of my life will be gone a lot faster that I thought. Enough sobbing, time for a summary of a second year at university!"
 category: "Personal"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2021/05/kvw.com-redesign.png"
+image: "/blog/images/kvw.com-redesign.png"
 ---
 
 Another year of being a student has come to an end. 2/3 years complete. I remember thinking three years is a long time, but honestly, time seems to be going a lot quicker nowadays. Being a student (especially while having loads of other responsibilities) is a hard work, but I already start to feel a bit sad that this chapter of my life will be gone a lot faster that I thought. 
@@ -18,7 +18,7 @@ The web app development unit was the best one so far, where we built a web app�
 
 I also really enjoyed getting to know React on Interaction Design unit. This was my first encounter with this framework, but as I already knew Vue, I found a lot of similarities between them.
 
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2021/06/interacion_thumbnail.jpeg)
+![](/blog/images/interacion_thumbnail.jpeg)
 *Interaction Design React components https://katwlodarczyk.github.io/interaction-design/*
 
 As I mentioned earlier, this year was a good mix of design and coding, and Human Computer Interaction unit has let me design a whole website for an imaginary job agency.  Usually at work I’m getting a design ready to code, so this was a  good practice and I’ve come to realisation that I genuinely prefer coding over designing. 😅 Here is my project (fully working prototypes):

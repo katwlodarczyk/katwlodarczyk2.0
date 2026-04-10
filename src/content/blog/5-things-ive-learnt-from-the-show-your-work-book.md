@@ -4,7 +4,7 @@ date: 2019-11-06
 excerpt: "Show your work! by Austin Kleon is the book I mentioned in the last post (which you can read here). It’s a nice, easy to read guide, that you can enjoy reading everywhere, due to it’s handy, small format. Here are 5 things I’ve learnt from this publication: Liked this post? Share:"
 category: "Personal"
 tags: []
-image: "https://katcodes.blog/wp-content/uploads/2019/11/zan-fytfozarvww-unsplash-scaled.jpg"
+image: "/blog/images/zan-fytfozarvww-unsplash-scaled.jpg"
 ---
 
 *Show your work!* by Austin Kleon is the book I mentioned in the last post (which you can read [here](https://katcodes.home.blog/2019/11/03/show-your-work/)). It’s a nice, easy to read guide, that you can enjoy reading everywhere, due to it’s handy, small format. 
@@ -28,7 +28,7 @@ Do something every day and document every little step in your journey. It will b
 
 Go out and meet people. Let them get to know who you are and what you do. Talk about yourself! That’s how you build your network and find same-minded souls to collaborate with.
 
-![](https://i0.wp.com/katcodes.blog/wp-content/uploads/2021/05/brooke-cagle-g1Kr4Ozfoac-unsplash-1.jpg)
+![](/blog/images/brooke-cagle-g1Kr4Ozfoac-unsplash-1.jpg)
 *Photo by Brooke Cagle on Unsplash*
 
 ### 5. Teach!
