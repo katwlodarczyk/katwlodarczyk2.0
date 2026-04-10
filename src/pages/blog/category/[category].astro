@@ -83,28 +83,5 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
       ))}
     </div>
 
-    <!-- Category pills -->
-    <div class="flex flex-wrap gap-2 mt-8 justify-center">
-      <a
-        href="/blog"
-        class="px-3 py-1 rounded-full text-xs font-medium text-muted-foreground border border-secondary/40 hover:border-secondary transition-colors"
-      >
-        All
-      </a>
-      {categories.map((cat) => (
-        <a
-          href={`/blog/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
-          aria-current={cat === category ? "page" : undefined}
-          class:list={[
-            "px-3 py-1 rounded-full text-xs font-medium border transition-colors",
-            cat === category
-              ? "text-foreground border-primary/40"
-              : "text-muted-foreground border-border hover:border-secondary/60 hover:text-foreground"
-          ]}
-        >
-          {cat}
-        </a>
-      ))}
-    </div>
   </div>
 </Layout>
