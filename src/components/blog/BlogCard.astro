@@ -5,9 +5,12 @@ interface Props {
   excerpt: string;
   category: string;
   slug: string;
+  image?: string;
+  featured?: boolean;
+  class?: string;
 }
 
-const { title, date, excerpt, category, slug } = Astro.props;
+const { title, date, excerpt, category, slug, image, featured = false, class: className } = Astro.props;
 
 const formattedDate = date.toLocaleDateString("en-GB", {
   day: "numeric",
@@ -16,30 +19,43 @@ const formattedDate = date.toLocaleDateString("en-GB", {
 });
 ---
 
-<article class="bg-card rounded-2xl border border-border p-6 flex flex-col hover:border-primary/30 transition-colors group">
-  <div class="flex items-center gap-3 mb-3">
-    <span class="px-2.5 py-1 text-xs font-medium rounded-full bg-secondary/20 text-secondary-foreground border border-secondary/30">
-      {category}
-    </span>
-    <time datetime={date.toISOString().split("T")[0]} class="text-xs text-muted-foreground">
-      {formattedDate}
-    </time>
-  </div>
-
-  <h2 class="text-lg font-display text-foreground mb-2 group-hover:text-primary transition-colors leading-snug">
-    <a href={`/blog/${slug}`} class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
-      {title}
+<article class:list={["bg-card rounded-2xl border border-border overflow-hidden flex flex-col hover:border-primary/30 transition-colors group", className]}>
+  {image && (
+    <a href={`/blog/${slug}`} class="block overflow-hidden" tabindex="-1" aria-hidden="true">
+      <img
+        src={image}
+        alt=""
+        class:list={["w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]", featured ? "h-64 md:h-80" : "h-44"]}
+        loading="lazy"
+      />
     </a>
-  </h2>
+  )}
 
-  <p class="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">{excerpt}</p>
+  <div class="p-6 flex flex-col flex-1">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="px-2.5 py-1 text-xs font-medium rounded-full bg-secondary/15 text-foreground border border-secondary/40">
+        {category}
+      </span>
+      <time datetime={date.toISOString().split("T")[0]} class="text-xs text-muted-foreground">
+        {formattedDate}
+      </time>
+    </div>
 
-  <a
-    href={`/blog/${slug}`}
-    class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
-    aria-label={`Read more: ${title}`}
-  >
-    Read more
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-  </a>
+    <h2 class:list={["font-display text-foreground mb-2 group-hover:text-primary transition-colors leading-snug", featured ? "text-xl md:text-2xl" : "text-lg"]}>
+      <a href={`/blog/${slug}`} class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
+        {title}
+      </a>
+    </h2>
+
+    <p class="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">{excerpt}</p>
+
+    <a
+      href={`/blog/${slug}`}
+      class="inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+      aria-label={`Read more: ${title}`}
+    >
+      Read more
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </a>
+  </div>
 </article>

@@ -51,7 +51,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --font-sans: "Lora", Georgia, serif;
+  --font-sans: "JetBrains Mono", Lora, Georgia, serif;
   --font-display: "Permanent Marker", cursive;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
   --color-background: var(--background);

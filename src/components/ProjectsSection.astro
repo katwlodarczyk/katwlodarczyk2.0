@@ -8,7 +8,7 @@ import { projects } from "../lib/data";
       class="scroll-reveal text-2xl md:text-3xl font-display mb-8 text-foreground"
      
     >
-      <span aria-hidden="true">🚀 </span><span class="text-highlight">Projects</span>
+      <span class="text-highlight">Projects</span>
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -32,7 +32,7 @@ import { projects } from "../lib/data";
 
             <ul class="space-y-1 mb-4 flex-1">
               {project.description.map((line, i) => (
-                <li class={`text-sm ${i === 0 ? "text-foreground/90 font-medium" : "text-muted-foreground"}`}>
+                <li class={`text-sm ${i === 0 ? "text-foreground/90 font-medium pb-2" : "text-[12px] text-muted-foreground"}`}>
                   {i > 0 && <span aria-hidden="true" class="mr-1 text-primary/60">·</span>}
                   {line}
                 </li>

@@ -1,0 +1,110 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import BlogCard from "../../../components/blog/BlogCard.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection("blog");
+  const categories = [...new Set(allPosts.map((p) => p.data.category))];
+
+  return categories.map((cat) => ({
+    params: { category: cat.toLowerCase().replace(/\s+/g, "-") },
+    props: {
+      category: cat,
+      posts: allPosts
+        .filter((p) => p.data.category === cat)
+        .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()),
+    },
+  }));
+}
+
+const { category, posts } = Astro.props;
+const allPosts = await getCollection("blog");
+const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
+---
+
+<Layout
+  title={`${category} — Blog — Kat Wlodarczyk`}
+  description={`Blog posts in the ${category} category.`}
+>
+  <div class="max-w-5xl mx-auto px-4 md:px-6 py-12">
+    <!-- Page header -->
+    <div class="mb-10">
+      <nav aria-label="Breadcrumb" class="mb-4 text-sm text-muted-foreground">
+        <a href="/" class="hover:text-primary transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/blog" class="hover:text-primary transition-colors">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-foreground">{category}</span>
+      </nav>
+      <h1 class="text-3xl md:text-4xl font-display text-foreground mb-3">
+        <span class="text-highlight">{category}</span>
+      </h1>
+      <p class="text-lg text-muted-foreground">
+        {posts.length} post{posts.length !== 1 ? "s" : ""}
+      </p>
+
+      <!-- Category pills -->
+      <div class="flex flex-wrap gap-2 mt-5">
+        <a
+          href="/blog"
+          class="px-3 py-1 rounded-full text-xs font-medium text-muted-foreground border border-secondary/40 hover:border-secondary transition-colors"
+        >
+          All
+        </a>
+        {categories.map((cat) => (
+          <a
+            href={`/blog/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
+            aria-current={cat === category ? "page" : undefined}
+            class:list={[
+              "px-3 py-1 rounded-full text-xs font-medium border transition-colors",
+              cat === category
+                ? "text-foreground border-primary/40"
+                : "text-muted-foreground border-secondary/40 hover:border-secondary"
+            ]}
+          >
+            {cat}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Article grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {posts.map((post) => (
+        <BlogCard
+          title={post.data.title}
+          date={post.data.date}
+          excerpt={post.data.excerpt}
+          category={post.data.category}
+          slug={post.slug}
+          image={post.data.image}
+        />
+      ))}
+    </div>
+
+    <!-- Category pills -->
+    <div class="flex flex-wrap gap-2 mt-8 justify-center">
+      <a
+        href="/blog"
+        class="px-3 py-1 rounded-full text-xs font-medium text-muted-foreground border border-secondary/40 hover:border-secondary transition-colors"
+      >
+        All
+      </a>
+      {categories.map((cat) => (
+        <a
+          href={`/blog/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
+          aria-current={cat === category ? "page" : undefined}
+          class:list={[
+            "px-3 py-1 rounded-full text-xs font-medium border transition-colors",
+            cat === category
+              ? "text-foreground border-primary/40"
+              : "text-muted-foreground border-border hover:border-secondary/60 hover:text-foreground"
+          ]}
+        >
+          {cat}
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

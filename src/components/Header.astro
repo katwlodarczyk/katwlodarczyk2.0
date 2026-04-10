@@ -28,9 +28,18 @@ const currentPath = Astro.url.pathname;
       <!-- Logo -->
       <a
         href="/"
-        class="font-display font-bold text-lg text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
+        aria-label="Home"
+        class="text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
       >
-        Kat Wlodarczyk
+        <svg width="90" height="40" viewBox="0 0 150 54" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M15.4995 53.8206H13.2853V0.159687H15.4995V53.8206ZM11.0711 53.8206H8.85686V0.159687H11.0711V53.8206ZM6.64265 53.8206H4.42843V0.159687H6.64265V53.8206ZM2.21422 53.8206H0V0.159687H2.21422V53.8206ZM31.6756 26.9901L44.6841 0.159687H47.1443L34.1358 26.9901L47.1443 53.8206H44.6841L31.6756 26.9901ZM26.7244 26.9901L39.7329 0.159687H42.1931L29.1846 26.9901L42.1931 53.8206H39.7329L26.7244 26.9901ZM21.7731 26.9901L34.7816 0.159687H37.2419L24.2334 26.9901L37.2419 53.8206H34.7816L21.7731 26.9901ZM16.7911 26.9901L29.8304 0.159687H32.2906L19.2514 26.9901L32.2906 53.8206H29.8304L16.7911 26.9901Z" fill="currentColor"/>
+          <path d="M65.9959 37.327L64.9503 41.9284L54.4328 0.159687H56.7085L65.9959 37.327ZM68.3024 28.3511L67.1646 32.8229L59.015 0.159687H61.26L68.3024 28.3511ZM70.6089 19.0512L69.4403 23.5877L63.5664 0.159687H65.8729L70.6089 19.0512ZM79.3735 53.8206H77.067L90.5368 0.224494L90.5061 0.159687H92.8433V0.224494L98.8401 21.9999L104.345 0.159687H106.651L93.1508 53.8206H90.8444L84.8168 32.0776L79.3735 53.8206ZM74.7605 53.8206H72.4848L85.9546 0.159687H88.2304L74.7605 53.8206ZM70.1783 53.8206H67.9026L81.4032 0.159687H83.6482L70.1783 53.8206ZM106.928 53.8206H104.622L118.092 0.159687H120.398L106.928 53.8206ZM102.315 53.8206H100.04L113.509 0.159687H115.785L102.315 53.8206ZM97.733 53.8206H95.4573L108.958 0.159687H111.203L97.733 53.8206ZM64.4583 49.2192L76.7902 0.159687H79.0967L65.5961 53.8206H63.2897L49.8199 0.159687H52.1263L64.4583 49.2192ZM85.9854 27.5086L91.9515 49.4137L93.1201 44.7799L87.1232 22.9397L85.9854 27.5086ZM88.2611 18.3707L94.2579 40.211L95.4266 35.642L89.4297 13.7693L88.2611 18.3707ZM90.5368 9.2976L96.5644 31.1378L97.7023 26.5365L91.7362 4.63143L90.5368 9.2976Z" fill="currentColor"/>
+          <path d="M29.8277 0.132711L37.2596 0.132715L24.2223 27.0098L16.7904 27.0098L29.8277 0.132711Z" fill="currentColor"/>
+          <path d="M37.2596 53.887L29.8277 53.887L17.5917 28.7137L21.9417 22.3644L37.2596 53.887Z" fill="currentColor"/>
+          <path d="M136.963 0.136122L129.531 0.136125L142.568 27.0133L150 27.0133L136.963 0.136122Z" fill="currentColor"/>
+          <path d="M129.531 53.8904L136.963 53.8904L149.952 27.0098L144.849 22.3679L129.531 53.8904Z" fill="currentColor"/>
+          <path d="M113.468 0H120.459L106.918 53.8206H100.053L113.468 0Z" fill="currentColor"/>
+        </svg>
       </a>
 
       <!-- Desktop nav -->
@@ -41,7 +50,7 @@ const currentPath = Astro.url.pathname;
             aria-current={currentPath === href || (href === "/blog" && currentPath.startsWith("/blog")) ? "page" : undefined}
             class="px-3 py-1.5 text-sm font-medium rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring aria-[current=page]:text-primary aria-[current=page]:bg-primary/10"
           >
-            <span aria-hidden="true" class="mr-1">{emoji}</span>{label}
+            <span aria-hidden="true" class="hidden mr-1">{emoji}</span>{label}
           </a>
         ))}
       </nav>
@@ -123,7 +132,7 @@ const currentPath = Astro.url.pathname;
           aria-current={currentPath === href || (href === "/blog" && currentPath.startsWith("/blog")) ? "page" : undefined}
           class="px-3 py-2.5 text-sm font-medium rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-colors aria-[current=page]:text-primary aria-[current=page]:bg-primary/10"
         >
-          <span aria-hidden="true" class="mr-2">{emoji}</span>{label}
+          <span aria-hidden="true" class="hidden mr-2">{emoji}</span>{label}
         </a>
       ))}
     </nav>

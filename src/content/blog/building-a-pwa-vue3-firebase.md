@@ -66,7 +66,7 @@ The ingredient database is a flat collection in Firestore:
   description: string
 ```
 
-The `aliases` array was critical — the same ingredient can appear under dozens of names. Sodium lauryl sulfate, SLS, sodium dodecyl sulfate — all the same thing. Querying by aliases required a composite index in Firestore and a `array-contains-any` query.
+The `aliases` array was critical — the same ingredient can appear under dozens of names. Sodium lauryl sulfate, SLS, sodium dodecyl sulfate — all the same thing. Querying by aliases required a composite index in Firestore and an `array-contains-any` query.
 
 ## Making it a PWA
 

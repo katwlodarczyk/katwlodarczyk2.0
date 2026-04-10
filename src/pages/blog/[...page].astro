@@ -1,0 +1,129 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import BlogCard from "../../components/blog/BlogCard.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths({ paginate }) {
+  const posts = (await getCollection("blog")).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+  return paginate(posts, { pageSize: 12 });
+}
+
+const { page } = Astro.props;
+const posts = page.data;
+
+const allPosts = await getCollection("blog");
+const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
+---
+
+<Layout
+  title={page.currentPage === 1 ? "Blog — Kat Wlodarczyk" : `Blog — Page ${page.currentPage} — Kat Wlodarczyk`}
+  description="Thoughts on web development, design, and the tools I use day-to-day."
+>
+  <div class="max-w-5xl mx-auto px-4 md:px-6 py-12">
+    <!-- Page header -->
+    <div class="mb-10">
+      <nav aria-label="Breadcrumb" class="mb-4 text-sm text-muted-foreground">
+        <a href="/" class="hover:text-primary transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-foreground">Blog</span>
+      </nav>
+      <h1 class="text-3xl md:text-4xl font-display text-foreground mb-3">
+        <span class="text-highlight">Blog</span>
+      </h1>
+      <p class="text-lg text-muted-foreground">
+        Thoughts on web development, design, and the tools I use day-to-day.
+      </p>
+
+      <!-- Category pills -->
+      <div class="flex flex-wrap gap-2 mt-5">
+        <a
+          href="/blog"
+          class="px-3 py-1 rounded-full text-xs font-medium text-foreground border border-primary/40 hover:border-primary transition-colors"
+        >
+          All
+        </a>
+        {categories.map((cat) => (
+          <a
+            href={`/blog/category/${cat.toLowerCase().replace(/\s+/g, "-")}`}
+            class="px-3 py-1 rounded-full text-xs font-medium text-muted-foreground border border-secondary/40 hover:border-secondary transition-colors"
+          >
+            {cat}
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Article grid -->
+    {posts.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {posts.map((post, i) => (
+          <BlogCard
+            class={`${page.currentPage === 1 && i === 0 ? "md:col-span-2" : ""}`}
+            title={post.data.title}
+            date={post.data.date}
+            excerpt={post.data.excerpt}
+            category={post.data.category}
+            slug={post.slug}
+            image={post.data.image}
+            featured={page.currentPage === 1 && i === 0}
+          />
+        ))}
+      </div>
+    ) : (
+      <p class="text-muted-foreground">No posts yet — check back soon!</p>
+    )}
+
+    <!-- Pagination -->
+    {page.lastPage > 1 && (
+      <nav aria-label="Pagination" class="flex items-center justify-center gap-2 mt-12">
+        <a
+          href={page.url.prev ?? "#"}
+          aria-disabled={!page.url.prev}
+          class:list={[
+            "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border text-sm font-medium transition-colors",
+            page.url.prev
+              ? "border-border text-foreground hover:border-primary/60 hover:text-primary"
+              : "border-border/40 text-muted-foreground pointer-events-none opacity-40"
+          ]}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          Previous
+        </a>
+
+        <div class="flex items-center gap-1">
+          {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((num) => (
+            <a
+              href={num === 1 ? "/blog" : `/blog/${num}`}
+              aria-current={num === page.currentPage ? "page" : undefined}
+              class:list={[
+                "w-9 h-9 flex items-center justify-center rounded-lg text-sm font-medium transition-colors",
+                num === page.currentPage
+                  ? "bg-primary text-primary-foreground"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              ]}
+            >
+              {num}
+            </a>
+          ))}
+        </div>
+
+        <a
+          href={page.url.next ?? "#"}
+          aria-disabled={!page.url.next}
+          class:list={[
+            "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border text-sm font-medium transition-colors",
+            page.url.next
+              ? "border-border text-foreground hover:border-primary/60 hover:text-primary"
+              : "border-border/40 text-muted-foreground pointer-events-none opacity-40"
+          ]}
+        >
+          Next
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </a>
+      </nav>
+    )}
+
+  </div>
+</Layout>
