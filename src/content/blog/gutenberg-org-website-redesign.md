@@ -1,48 +1,30 @@
 ---
 title: "Gutenberg.org website redesign"
 date: 2020-02-02
-excerpt: "Fruition of my last assignment- website redesign of Gutenberg.org Liked this post? Share:"
+excerpt: "A complete UX/UI redesign of Gutenberg.org featuring mobile-first wireframes, user research-driven color schemes, and comprehensive style guides. This academic project showcases the full design process from initial wireframes to final mockups."
 category: "Projects"
-tags: []
+tags: ["uni", "assignments", "design", "projects"]
 image: "/blog/images/behnace-presentation-3.png"
 ---
 
 Fruition of my last assignment- website redesign of Gutenberg.org
 
+## Design Process & Wireframes
+
 **Medium fidelity** wireframes have been done in Adobe XD. Mobile first approach has been used in order to enhance the design as the screen sizes increases, rather than take cool stuff away with a decreased size.
 
-![](/blog/images/mobile_homepage.png)
-
-![](/blog/images/tablet_homepage-e1580662510178.png)
-
-![](/blog/images/desktop_homepage.png)
+## User Research & Color Refinement
 
 After the initial survey, the colour scheme has been changed to suit wider group of users.
 
-![](/blog/images/iphone-x-xs-11-pro-e28093-1.png)
+### Mobile & Tablet Views
 
-![](/blog/images/single-book-page-added-to-fav.png)
+## Design System
 
-![](/blog/images/desktop.png)
+### Style Guide
 
-![](/blog/images/tablet_sbp.png)
+### Final Mockups
 
-![](/blog/images/desktop.png)
+## View Complete Project
 
-![](/blog/images/sbp.png)
-
-**Style guide:**
-
-![](/blog/images/style-guide.png)
-
-**Mockups:**
-
-![](/blog/images/apple-devices1.png)
-
-![](/blog/images/imac.png)
-
-![](/blog/images/iphone-6s-plus-3a.png)
-
-![](/blog/images/ipad-pro-3.png)
-
-### >See it on Behance
+### [See it on Behance →](https://www.behance.net/)

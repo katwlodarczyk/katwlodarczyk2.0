@@ -189,5 +189,8 @@
   .prose-blog hr {
     @apply border-border my-8;
   }
+  .prose-blog img {
+    @apply w-full h-auto rounded-lg border border-border mb-4 mt-4;
+  }
 }
 

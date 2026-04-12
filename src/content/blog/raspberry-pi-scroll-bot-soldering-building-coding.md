@@ -1,33 +1,37 @@
 ---
 title: "Raspberry Pi scroll bot- soldering, building, coding"
 date: 2020-06-02
-excerpt: "Although I am a frontend developer with all my heart, I was always fascinated by how to build robots or wearable technology. I haven’t done anything about it until…."
+excerpt: "My first hardware project: building a Raspberry Pi scroll bot from scratch. Complete journey from soldering components to coding the display, including setup challenges and programming examples."
 category: "Projects"
-tags: []
+tags: ["raspberry_pi", "hardware", "soldering", "diy_projects", "python", "electronics", "scroll_bot", "maker_projects"]
 image: "/blog/images/harrison-broadbent-c3ypscwjb04-unsplash-scaled.jpg"
 ---
 
+## From Frontend Developer to Hardware Builder
+
 Although I am a frontend developer with all my heart, I was always fascinated by how to build robots or wearable technology.
 
-I haven’t done anything about it until I’ve seen a post on Twitter about some guy who has built a little display unit to show his family whether he has a meeting or is free to bother (anyone WFH and with kids out of school will understand the need for stuff like this :D) Anyway, the display looked really cool, I retweeted, and my good friend sent me a link to a Raspberry Pi shop ([PiHut](https://thepihut.com/)) and encouraged me to buy something and start building.
+I haven't done anything about it until I've seen a post on Twitter about some guy who has built a little display unit to show his family whether he has a meeting or is free to bother (anyone WFH and with kids out of school will understand the need for stuff like this :D) Anyway, the display looked really cool, I retweeted, and my good friend sent me a link to a Raspberry Pi shop ([PiHut](https://thepihut.com/)) and encouraged me to buy something and start building.
+
+## Choosing My First Project
 
 I needed something relatively simple for my first project, so products from Kits/Bundles tab seemed perfect.
 
 I decided on this little scroll bot:
 
-![](/blog/images/zero-w-kits-square-3_600x.jpg)
-
 The package came super-quick, within 24 hrs.
+
+## My First Soldering Experience
 
 Beware, this is a soldering project (😱 ), but you can also buy no-solder hammer headers to complete it.
 
 My friend Jack has a soldering iron, which he kindly agreed to lend me. (Thank you!)
 
-I have never soldered before, and it’s been nerve-racking activity, but after a quick youtube tutorial, I managed to solder both **raspberry pi zero** and **scroll phat hd** boards. (spoiler-alert! I have not messed up this step and everything works perfectly! So if I could do that, there is a high chance that you can do it too!)
+I have never soldered before, and it's been nerve-racking activity, but after a quick youtube tutorial, I managed to solder both **raspberry pi zero** and **scroll phat hd** boards. (spoiler-alert! I have not messed up this step and everything works perfectly! So if I could do that, there is a high chance that you can do it too!)
+
+## Assembly Process
 
 The next step was to build the orange robot frame, and here I have followed the original assembly instructions, which you can access via [this link](https://learn.pimoroni.com/tutorial/sandyj/assembling-scroll-bot).
-
-![](/blog/images/img_9334-e1591044219283.jpg)
 
 My robot was complete, but with the end of instructions, ended my knowledge on what to do next 😂
 
@@ -39,21 +43,19 @@ I googled some more and realised I slotted an empty SD card, so of course, nothi
 
 I tried again, the LED light on Pi Zero went on, and I saw a lovely Raspberry logo on the monitor. Victory! 🏆
 
-![](/blog/images/img_4847.jpg)
+## First Programming Steps
 
 The first step was to install the scroll phat hd python library. For this step and few of my first coding tests, I followed this tutorial from Pimoroni website ([CLICK HERE for tutorial](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-scroll-phat-hd))
 
 At that point, I still had no idea whether my scroll phat hd board works, so when I tried one of the examples (downloaded with the library) and my robot came alive, I was really proud of myself and my soldering skills (haha).
 
+### Basic Projects
+
 The first little projects I did were a simple clock and displaying different strings, both static and scrolled ones.
-
-![](/blog/images/img_9330.jpg)
-
-![](/blog/images/img_8219.jpg)
 
 For example, to code the clock you can see in the picture above, simple type:
 
-![](/blog/images/carbon-2-e1591087928547.png)
+## What's Next?
 
 As this post turned out quite lengthy, I will go in-depth about the final project for my little scroll bot later this month.
 

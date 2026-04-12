@@ -27,8 +27,6 @@ The current situation around the world and increased remote working make platfor
 As mentioned in the introduction, short, animated videos have become extremely popular and widely used to quickly express our thoughts and ideas. Instead of writing a long, wordy message that would perfectly describe our feelings, we can send a meme that does just that.
 Using gifs and memes on Slack is possible, but extremely time-consuming and not user-friendly at all. Let’s have a look at how to add a gif to a conversation on Slack at the moment:
 
-![gifs on slack at the moment screen cast](/blog/images/rpreplay_final1603975359.gif)
-
 1. Click on the lightning icon
 2. Look for Giphy and click the link
 3. Type a word to look for meme
@@ -44,12 +42,6 @@ Estimated time to find your meme: WAY TO LONG.
 ### Competitive Analysis
 
 Facebook, WhatsApp or Twitter are only the few that have a messaging feature. All mentioned above have a gif button directly on the message tab, allowing users to quickly browse for a perfect animated message to add to the conversation. General styling and the number of extra features, like a search bar, favourite button, or grouping by a category varies throughout, but the ability to pain-free access to wanted content is present.
-
-![facebook gif](/blog/images/picture-1.png)
-
-![whatapp gif](/blog/images/picture-12png.png)
-
-![twitter gif ](/blog/images/picture-2.png)
 
 Estimated time to find what you are looking for: approx. 10-30 seconds.
 

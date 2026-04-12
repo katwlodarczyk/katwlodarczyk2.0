@@ -7,8 +7,6 @@ tags: ["summary", "uni"]
 image: "/blog/images/first-year-at-uni_-1.png"
 ---
 
-[](/blog/images/cathryn-lavery-fmd_cru6otk-unsplash.jpg)
-
 ## Pre-University Worries
 
 Ever since I got those unconditional offers (or maybe even before that), I worried. I like to know what's about to happen, and I do very much like to plan things out. As most freshers, I had so many questions on how is my life gonna look like now. Of course being 26, with a child and a job, finances and logistics where my main concern.

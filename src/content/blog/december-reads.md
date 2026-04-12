@@ -21,6 +21,6 @@ A good chunk of knowledge on improving usability of websites. Learned a lot from
 I took this one home with me because the cover caught my eye in the library. I was excited to read it, but finally I’m a little disappointed. I thought it would be more about designing digital stuff, but it turns out it’s more about companies and physical products. Don’t get me wrong, it ain’t a bad book. Just not the one I wanted to read
 ….and last but not least, and finally in my native language
 
-4. ***O co ci chodzi?* by Dawid Bałutowski**![](/blog/images/752115-352x500-1-e1578003188587.jpg)
+4. ***O co ci chodzi?* by Dawid Bałutowski**
 
 As most of you probably do not speak or read Polish, this position is all about interpersonal communication. As an introvert, I found it very helpful and I’m glad my mom gave it to me some time ago.What have you read lately? Tell me about it!

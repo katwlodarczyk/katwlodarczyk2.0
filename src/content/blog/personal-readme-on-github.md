@@ -1,28 +1,34 @@
 ---
 title: "Personal README on GitHub"
 date: 2021-10-20
-excerpt: "GitHub lets you create a personal README to showcase who you are — a bit like a bio field, but less boring and with much more potential. Here's how to make one."
+excerpt: "Learn how to create a standout personal README on GitHub to showcase your skills, projects, and personality. Step-by-step guide with tips for badges and customization."
 category: "Tips"
-tags: ["github", "tips", "developer profile"]
+tags: ["github", "tips", "developer_profile", "readme", "personal_branding", "portfolio", "markdown"]
 image: "/blog/images/README-on-GitHub-1.png"
 ---
 
+## What Makes a Great Personal README?
+
 Some time ago GitHub added a feature to create our own personal README, to showcase who we are, our skills, passions and goals. A bit like a bio field, but less boring and with much more potential!
 
-## So what is README?
+### Understanding README Files
 
 A README is a form of documentation, and usually the first one read by a user of a project or an application. It contains useful information and instructions. Every project should have a well written README — and so should we!
 
 There are endless possibilities for how you can make your README truly yours, but if you need some ideas to get your creative juices flowing, look at [https://awesomegithubprofile.tech/](https://awesomegithubprofile.tech/) for instant inspiration.
 
-## Add a personal README to your GitHub
+## How to Create Your Personal README
 
 OK, so you are ready to create your own statement. Where do you start? On GitHub, of course.
+
+### Step-by-Step Setup
 
 1. Log in to your account and click on the link to add a new repository.
 2. Name your repository the same as your username. (e.g. my username on GitHub is `katwlodarczyk`, so I named the repo `katwlodarczyk`)
 3. Make sure the repository is public and initialize it with a README file.
 4. Create the repository.
+
+### Customizing Your Content
 
 Now it's time to get creative!
 
@@ -30,7 +36,7 @@ Add your awesome statement following Markdown rules ([Markdown cheat sheet here]
 
 Emojis, images and other decorative items are good to lighten up the document, but if it's not your thing, don't add it only because others did. Remember, this file should tell something about **you**.
 
-### Adding badges
+## Advanced Tips: Adding Badges
 
 Here is something I had trouble with, so I thought I'd save you some time browsing.
 

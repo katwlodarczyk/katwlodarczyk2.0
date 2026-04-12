@@ -7,8 +7,6 @@ tags: ["tailwind_css", "css", "coding"]
 image: "/blog/images/first-year-at-uni_-2.png"
 ---
 
-![](/blog/images/5765ecd9-d74f-4169-ab7e-e5079978e019.jpg)
-
 I’ve discovered it few months ago, when I started my internship, and it didn’t take long for me to fall in love with it.
 
 ### What’s so good about this framework?
@@ -24,7 +22,6 @@ Long story short on how to understand tailwind: just add a class to your element
 You have no idea how much time you’ll save by not going back and forth from one file to another, and using short names, like `mt-2` or `font-semibold`. (All of which are in the [documentation](https://tailwindcss.com/docs/installation), so definitely check it out!)
 Tailwind also has some lovely animation classes, so all you have to type is `animate-pulse`, `animate-bounce`, `animate-spin` or `animate-ping`, and call it a day, because your website now has awesome animation that only took seconds of your time!
 
-[![](/blog/images/b6329d34-e16b-4f62-bf1c-758de930e849.jpg)](https://tailwindui.com/)
 Bonus stuff from Tailwind, that will make creating new projects a breeze? [TAILWIND UI](https://tailwindui.com/).
 Ready made components, that you can use like building blocks.
 Access to all of them is, unfortunately, paid but you can use some of them for free [here](https://tailwindui.com/preview).

@@ -51,13 +51,9 @@ Although they offer a lot of nice images, the website is really slow (probably f
 
 Smaller library, but if you can’t find what you are looking for on the big portal (like Unsplash, I recommend looking at Picography. I love their logo too!
 
-![](/blog/images/screenshot-2020-05-12-at-20.49.57.png)
-
 ## https://burst.shopify.com/
 
 License-free images from Shopify. They have a lot of categories and great images I haven’t seen anywhere else. Definitely worth a visit.
-
-![](/blog/images/screenshot-2020-05-12-at-20.55.10.png)
 
 I hope this post was useful and you just found your favourite portal to get awesome images for your projects!👩‍💻
 

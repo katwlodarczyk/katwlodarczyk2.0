@@ -7,8 +7,6 @@ tags: []
 image: "/blog/images/create-simple-1.png"
 ---
 
-![](/blog/images/toggle-switch.gif)
-
 The first thing we need is a design of your toggle. 
 I’ve made mine using Figma. The sun and moon icons are from [Iconify plugin](https://www.figma.com/community/plugin/735098390272716381/Iconify), and gradients were made with [uiGradients plugin](https://www.figma.com/community/plugin/744909029427810418/uiGradients). When you’re happy with your design, save your file and export the icons (if your have them of course, as they are not mandatory).
 
