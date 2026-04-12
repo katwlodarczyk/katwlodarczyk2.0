@@ -7,6 +7,8 @@ tags: ["workshop", "web_development", "mixd_agency", "leeds", "networking", "stu
 image: "/blog/images/img_7668-e1580506354442-scaled.jpg"
 ---
 
+## Seizing New Opportunities
+
 One of my resolutions for this year was to be open for any opportunity “knocking on my door”. So when I got an email from my course leader about ‘Work in the web’ workshop, I didn’t hesitate to apply. In the end, I had nothing to loose, and loads to gain!
 
 Work In The Web is a 3-day development workshop for students who wants to work in the web industry. The initiative from Mixd agency, based in Leeds, is their way to give back and help out new generations of programmers to learn about to industry, new skills and get the  insight of how it really is like in the real dev world.
