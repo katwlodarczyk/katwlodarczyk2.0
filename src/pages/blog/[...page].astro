@@ -3,22 +3,55 @@ import Layout from "../../layouts/Layout.astro";
 import BlogCard from "../../components/blog/BlogCard.astro";
 import { getCollection } from "astro:content";
 
-export async function getStaticPaths({ paginate }) {
-  const posts = (await getCollection("blog")).sort(
+export async function getStaticPaths() {
+  const sorted = (await getCollection("blog")).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
   );
-  return paginate(posts, { pageSize: 11 });
+
+  const firstPageSize = 11;
+  const pageSize = 12;
+  const remaining = sorted.slice(firstPageSize);
+  const otherPageCount = Math.ceil(remaining.length / pageSize);
+  const lastPage = 1 + otherPageCount;
+
+  const paths = [
+    {
+      params: { page: undefined },
+      props: {
+        posts: sorted.slice(0, firstPageSize),
+        currentPage: 1,
+        lastPage,
+        prevUrl: null,
+        nextUrl: otherPageCount > 0 ? "/blog/2" : null,
+      },
+    },
+  ];
+
+  for (let i = 0; i < otherPageCount; i++) {
+    const num = i + 2;
+    paths.push({
+      params: { page: String(num) },
+      props: {
+        posts: remaining.slice(i * pageSize, (i + 1) * pageSize),
+        currentPage: num,
+        lastPage,
+        prevUrl: num === 2 ? "/blog" : `/blog/${num - 1}`,
+        nextUrl: num < lastPage ? `/blog/${num + 1}` : null,
+      },
+    });
+  }
+
+  return paths;
 }
 
-const { page } = Astro.props;
-const posts = page.data;
+const { posts, currentPage, lastPage, prevUrl, nextUrl } = Astro.props;
 
 const allPosts = await getCollection("blog");
 const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
 ---
 
 <Layout
-  title={page.currentPage === 1 ? "Blog — Kat Wlodarczyk" : `Blog — Page ${page.currentPage} — Kat Wlodarczyk`}
+  title={currentPage === 1 ? "Blog — Kat Wlodarczyk" : `Blog — Page ${currentPage} — Kat Wlodarczyk`}
   description="Thoughts on web development, design, and the tools I use day-to-day."
 >
   <div class="max-w-5xl mx-auto px-4 md:px-6 py-12">
@@ -61,7 +94,7 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
         {posts.map((post, i) => (
           <BlogCard
             class={[
-              page.currentPage === 1 && i === 0 ? "md:col-span-2" : "",
+              currentPage === 1 && i === 0 ? "md:col-span-2" : "",
               "scroll-reveal",
               i === 1 ? "scroll-reveal-delay-1" : "",
               i === 2 ? "scroll-reveal-delay-2" : "",
@@ -73,7 +106,7 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
             category={post.data.category}
             slug={post.slug}
             image={post.data.image}
-            featured={page.currentPage === 1 && i === 0}
+            featured={currentPage === 1 && i === 0}
           />
         ))}
       </div>
@@ -82,16 +115,16 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
     )}
 
     <!-- Pagination -->
-    {page.lastPage > 1 && (
+    {lastPage > 1 && (
       <nav aria-label="Pagination" class="flex flex-col items-center justify-center gap-6 md:gap-3 mt-12">
         <!-- Prev / Next -->
         <div class="flex items-center justify-between w-full gap-2">
           <a
-            href={page.url.prev ?? "#"}
-            aria-disabled={!page.url.prev}
+            href={prevUrl ?? "#"}
+            aria-disabled={!prevUrl}
             class:list={[
               "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border text-sm font-medium transition-colors",
-              page.url.prev
+              prevUrl
                 ? "border-border text-foreground hover:border-primary/60 hover:text-primary"
                 : "border-border/40 text-muted-foreground pointer-events-none opacity-40"
             ]}
@@ -100,11 +133,11 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
             Previous
           </a>
           <a
-            href={page.url.next ?? "#"}
-            aria-disabled={!page.url.next}
+            href={nextUrl ?? "#"}
+            aria-disabled={!nextUrl}
             class:list={[
               "inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border text-sm font-medium transition-colors",
-              page.url.next
+              nextUrl
                 ? "border-border text-foreground hover:border-primary/60 hover:text-primary"
                 : "border-border/40 text-muted-foreground pointer-events-none opacity-40"
             ]}
@@ -116,13 +149,13 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
 
         <!-- Page numbers -->
         <div class="flex items-center gap-1">
-          {Array.from({ length: page.lastPage }, (_, i) => i + 1).map((num) => (
+          {Array.from({ length: lastPage }, (_, i) => i + 1).map((num) => (
             <a
               href={num === 1 ? "/blog" : `/blog/${num}`}
-              aria-current={num === page.currentPage ? "page" : undefined}
+              aria-current={num === currentPage ? "page" : undefined}
               class:list={[
                 "w-9 h-9 flex items-center justify-center rounded-lg text-sm font-medium transition-colors",
-                num === page.currentPage
+                num === currentPage
                   ? "bg-primary text-primary-foreground"
                   : "text-muted-foreground hover:text-foreground hover:bg-secondary/15"
               ]}

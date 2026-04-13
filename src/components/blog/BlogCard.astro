@@ -19,16 +19,16 @@ const formattedDate = date.toLocaleDateString("en-GB", {
 });
 ---
 
-<article class:list={["bg-card rounded-2xl border border-border overflow-hidden flex flex-col hover:border-primary/30 transition-colors group", className]}>
+<article class:list={["relative bg-card rounded-2xl border border-border overflow-hidden flex flex-col hover:border-primary/30 transition-colors group", className]}>
   {image && (
-    <a href={`/blog/${slug}`} class="block overflow-hidden flex-shrink-0" tabindex="-1" aria-hidden="true">
+    <div class="block overflow-hidden flex-shrink-0">
       <img
         src={image}
         alt=""
         class:list={["w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]", featured ? "h-56" : "h-44"]}
         loading="lazy"
       />
-    </a>
+    </div>
   )}
 
   <div class="p-6 flex flex-col flex-1">
@@ -42,20 +42,21 @@ const formattedDate = date.toLocaleDateString("en-GB", {
     </div>
 
     <h2 class:list={["font-display text-foreground mb-2 group-hover:text-primary transition-colors leading-snug", featured ? "text-xl md:text-2xl" : "text-lg"]}>
-      <a href={`/blog/${slug}`} class="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded">
-        {title}
-      </a>
+      {title}
     </h2>
 
     <p class="text-sm text-muted-foreground leading-relaxed line-clamp-4 mb-4">{excerpt}</p>
 
-    <a
-      href={`/blog/${slug}`}
-      class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded"
-      aria-label={`Read more: ${title}`}
-    >
+    <span class="mt-auto inline-flex items-center gap-1 text-sm font-medium text-primary">
       Read more
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-    </a>
+    </span>
   </div>
+
+  <!-- Stretched link covers the whole card -->
+  <a
+    href={`/blog/${slug}`}
+    class="absolute inset-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-inset rounded-2xl"
+    aria-label={title}
+  ></a>
 </article>
