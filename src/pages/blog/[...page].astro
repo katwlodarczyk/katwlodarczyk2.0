@@ -83,9 +83,9 @@ const categories = [...new Set(allPosts.map((p) => p.data.category))].sort();
 
     <!-- Pagination -->
     {page.lastPage > 1 && (
-      <nav aria-label="Pagination" class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-3 mt-12">
+      <nav aria-label="Pagination" class="flex flex-col items-center justify-center gap-6 md:gap-3 mt-12">
         <!-- Prev / Next -->
-        <div class="flex items-center justify-between w-full md:w-auto md:contents gap-2">
+        <div class="flex items-center justify-between w-full gap-2">
           <a
             href={page.url.prev ?? "#"}
             aria-disabled={!page.url.prev}
