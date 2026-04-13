@@ -4,6 +4,7 @@ date: 2024-09-20
 excerpt: "How I built a PWA ingredient scanner using Tesseract.js OCR, Vue 3 Composition API, and Firebase — what worked, what didn't, and what the BCS award meant to me."
 category: "Projects"
 tags: ["vue3", "firebase", "pwa", "tesseract", "javascript"]
+image: "/blog/images/pwa-vue-firebase.jpg"
 ---
 
 Haircare Scan started as a personal frustration. I have curly hair, and reading ingredient lists to check for silicones, sulfates, and proteins is genuinely tedious. Tiny text, unfamiliar chemical names, and the constant need to cross-reference a list — there had to be a better way.

@@ -4,6 +4,7 @@ date: 2024-03-15
 excerpt: "A hands-on introduction to Alpine.js — the minimal JavaScript framework that pairs beautifully with Tailwind CSS for adding interactivity without the complexity of React or Vue."
 category: "Tutorial"
 tags: ["alpinejs", "javascript", "tailwind", "frontend"]
+image: "/blog/images/getting-started-alpinejs.jpg"
 ---
 
 If you've ever found yourself reaching for React or Vue just to make a navigation menu toggle or a dark mode switch, you'll love Alpine.js. It gives you the reactive, declarative toolset of a full framework but at a fraction of the cost — no build step required.

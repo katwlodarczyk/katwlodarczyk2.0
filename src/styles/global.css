@@ -87,6 +87,8 @@
 .scroll-reveal-delay-2 { transition-delay: 0.2s; }
 .scroll-reveal-delay-3 { transition-delay: 0.3s; }
 
+[x-cloak] { display: none !important; }
+
 @layer base {
   * {
     @apply border-border;

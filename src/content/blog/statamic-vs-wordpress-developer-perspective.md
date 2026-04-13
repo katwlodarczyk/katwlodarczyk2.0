@@ -4,6 +4,7 @@ date: 2024-06-10
 excerpt: "I've built client sites with both platforms professionally. Here's what I genuinely prefer, where each falls short, and how to choose between them for your next project."
 category: "Opinion"
 tags: ["statamic", "wordpress", "cms", "laravel", "php"]
+image: "/blog/images/statamic-vs-wordpress.jpg"
 ---
 
 I've spent the last three years building client websites with both WordPress and Statamic at Steadfast Collective. I've led WordPress projects, built Statamic sites from scratch, and had to defend my CMS recommendation in more than a few client kickoff meetings. Here's my honest take.
