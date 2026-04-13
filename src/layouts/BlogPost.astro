@@ -30,7 +30,7 @@ const formattedDate = date.toLocaleDateString("en-GB", {
 ---
 
 <Layout title={`${title} — Kat Wlodarczyk`} description={excerpt}>
-  <div class="max-w-5xl mx-auto px-4 md:px-6 py-12">
+  <div class="max-w-5xl mx-auto px-4 md:px-6 pb-0 md:pb-12 pt-12">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" class="mb-8 text-sm text-muted-foreground">
       <a href="/" class="hover:text-primary transition-colors">Home</a>
@@ -40,10 +40,20 @@ const formattedDate = date.toLocaleDateString("en-GB", {
       <span class="text-foreground">{title}</span>
     </nav>
 
-    <div class="flex flex-col lg:flex-row gap-10">
+    <div class="flex flex-col lg:flex-row gap-6 md:gap-10">
+    <!-- Featured image -->
+        {image && (
+          <div class="md:hidden rounded-2xl overflow-hidden border border-border">
+            <img
+              src={image}
+              alt={title}
+              class="w-full h-auto object-cover"
+            />
+          </div>
+        )}
       <!-- Article body -->
       <article class="w-full lg:w-[70%]">
-        <div class="bg-card rounded-2xl border border-border p-6 md:p-10">
+        <div class="bg-card rounded-2xl border border-border p-4 md:p-10">
           <!-- Category + date -->
           <div class="flex flex-wrap items-center gap-3 mb-4">
             <span class="px-3 py-1 text-xs font-medium rounded-full bg-secondary/15 text-foreground border border-secondary/40">
@@ -90,7 +100,7 @@ const formattedDate = date.toLocaleDateString("en-GB", {
       <aside class="w-full lg:w-[30%] lg:sticky lg:top-20 self-start space-y-6">
         <!-- Featured image -->
         {image && (
-          <div class="rounded-2xl overflow-hidden border border-border">
+          <div class="hidden md:flex rounded-2xl overflow-hidden border border-border">
             <img
               src={image}
               alt={title}

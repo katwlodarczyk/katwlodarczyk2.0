@@ -121,22 +121,8 @@
     z-index: -1;
     border-radius: 2px;
   }
-  .bio-highlight {
-    position: relative;
-    padding: 0.6rem 0.8rem;
-  }
-  .bio-highlight::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255, 143, 187, 0.45);
-    filter: url(#highlight-rough);
-    border-radius: 3px;
-    z-index: 0;
-  }
-  .bio-highlight p {
-    position: relative;
-    z-index: 1;
+  :is(.dark *) .text-highlight::before {
+    background: linear-gradient(transparent 52%, rgba(255, 143, 187, 0.75) 52%);
   }
   .bg-hero-gradient {
     background-color: var(--background);
