@@ -7,7 +7,7 @@ tags: ["statamic", "wordpress", "cms", "laravel", "php"]
 image: "/blog/images/statamic-vs-wordpress.jpg"
 ---
 
-I've spent the last three years building client websites with both WordPress and Statamic at Steadfast Collective. I've led WordPress projects, built Statamic sites from scratch, and had to defend my CMS recommendation in more than a few client kickoff meetings. Here's my honest take.
+I've spent the last three years building client websites with both WordPress and Statamic at Steadfast Collective. I've led WordPress projects, built Statamic sites from scratch. Here's my honest take.
 
 ## The Developer Experience Gap
 
@@ -17,7 +17,7 @@ Statamic runs on Laravel. If you know Laravel (and you should), the mental model
 
 **Antlers vs Blade vs PHP templates:**
 
-Statamic's Antlers templating language is clean and readable. For simpler sites, it's a joy. But for complex logic, I often switch to Blade via a Statamic add-on, which gives me the full power of Laravel views. WordPress's template hierarchy is... functional. But mixing PHP logic directly in template files never feels clean.
+Statamic's Antlers templating language is clean and readable. WordPress's template hierarchy is... functional. But mixing PHP logic directly in template files never feels clean.
 
 ## The Content Editing Experience
 
