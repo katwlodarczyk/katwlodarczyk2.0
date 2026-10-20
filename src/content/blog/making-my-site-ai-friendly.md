@@ -4,7 +4,7 @@ date: 2026-10-20
 excerpt: "More and more people find things through AI tools now, so I spent an afternoon making my portfolio easier for them to read. Here's what I added and why."
 category: "Projects"
 tags: ["astro", "ai", "llms_txt", "seo", "portfolio"]
-image: "/blog/images/making-my-site-ai-friendly.png"
+image: "/blog/images/ai-agents-robot.png"
 ---
 
 Here's something I've noticed lately: when I want to find out about a person or a tool, I don't always open Google anymore. I ask an AI assistant. And if I do that, other people do too. So what happens when someone asks one of them about me?
