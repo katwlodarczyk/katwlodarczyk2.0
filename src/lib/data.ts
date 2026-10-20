@@ -100,8 +100,8 @@ export const projects = [
     ],
   },
   {
-    image: "/projects/zeszyt-trenera.png",
-    title: "Zeszyt Trenera",
+    image: "/projects/trainers-notebook.png",
+    title: "Trainer's Notebook",
     website: "https://zeszyt-trenera.katwlodarczyk.com/",
     description: [
       "Personal trainer's notebook PWA: client list, logging between sets, PBs and charts",
