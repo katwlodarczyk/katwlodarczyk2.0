@@ -6,11 +6,29 @@ import SkillsSection from "../components/SkillsSection.astro";
 import AwardsSection from "../components/AwardsSection.astro";
 import EducationSection from "../components/EducationSection.astro";
 import ProjectsSection from "../components/ProjectsSection.astro";
-import { personalInfo } from "../lib/data";
+import { personalInfo, siteUrl, workExperience, education, skills, awards } from "../lib/data";
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: personalInfo.name,
+  jobTitle: personalInfo.jobTitle,
+  description: personalInfo.bio,
+  url: siteUrl,
+  image: `${siteUrl}/profile.jpg`,
+  email: `mailto:${personalInfo.email}`,
+  address: { "@type": "PostalAddress", addressLocality: "Szczecin", addressCountry: "PL" },
+  worksFor: { "@type": "Organization", name: workExperience[0].company },
+  alumniOf: { "@type": "CollegeOrUniversity", name: education[0].institution },
+  award: awards.map((a) => `${a.name} — ${a.issuer} (${a.date})`),
+  knowsAbout: Object.values(skills).flat(),
+  sameAs: [personalInfo.github, personalInfo.linkedin],
+};
 ---
 
 <Layout
   title="Kat Wlodarczyk — Web Developer"
+  jsonLd={personJsonLd}
   description="Personal portfolio of Kat Wlodarczyk, a web developer based in Szczecin, Poland with expertise in Laravel, Statamic, Vue 3, and Tailwind CSS."
 >
   <HeroSection />

@@ -6,12 +6,23 @@ import Footer from "../components/Footer.astro";
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  type?: "website" | "article";
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  markdownUrl?: string;
 }
 
 const {
   title = "Kat Wlodarczyk — Web Developer",
   description = "Personal portfolio of Kat Wlodarczyk, a web developer with expertise in Laravel, Statamic, Vue 3 and Tailwind CSS.",
+  image = "/profile.jpg",
+  type = "website",
+  jsonLd,
+  markdownUrl,
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -23,6 +34,24 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Kat Wlodarczyk — Blog" href="/rss.xml" />
+    <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
+    {markdownUrl && <link rel="alternate" type="text/markdown" href={markdownUrl} />}
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="Kat Wlodarczyk" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,6 +60,7 @@ const {
     />
     <!-- Prevent FOUC: apply dark class before paint -->
     <script is:inline>
+      document.documentElement.classList.add("js");
       const stored = localStorage.getItem("theme");
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
       if (stored === "dark" || (!stored && prefersDark)) {

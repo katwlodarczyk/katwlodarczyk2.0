@@ -1,5 +1,9 @@
+export const siteUrl = "https://katwlodarczyk.com";
+
 export const personalInfo = {
   name: "Kat Wlodarczyk",
+  jobTitle: "Web Developer",
+  bio: "Creative web developer with a background in both design and code. Writing about web development, design, and the tools she uses day-to-day.",
   location: "Szczecin, Poland",
   email: "kat.bar.wlodarczyk@gmail.com",
   github: "https://github.com/katwlodarczyk",

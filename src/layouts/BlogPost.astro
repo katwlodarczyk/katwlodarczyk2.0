@@ -1,6 +1,6 @@
 ---
 import Layout from "./Layout.astro";
-import { personalInfo } from "../lib/data";
+import { personalInfo, siteUrl } from "../lib/data";
 import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("blog");
@@ -22,6 +22,32 @@ const relatedPosts = allPosts
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 
+const postUrl = `${siteUrl}/blog/${slug}`;
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: title,
+    description: excerpt,
+    datePublished: date.toISOString(),
+    url: postUrl,
+    mainEntityOfPage: postUrl,
+    image: image ? new URL(image, siteUrl).href : undefined,
+    articleSection: category,
+    keywords: tags.length ? tags.join(", ") : undefined,
+    author: { "@type": "Person", name: personalInfo.name, url: siteUrl },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}/blog` },
+      { "@type": "ListItem", position: 3, name: title, item: postUrl },
+    ],
+  },
+];
+
 const formattedDate = date.toLocaleDateString("en-GB", {
   day: "numeric",
   month: "long",
@@ -29,7 +55,14 @@ const formattedDate = date.toLocaleDateString("en-GB", {
 });
 ---
 
-<Layout title={`${title} — Kat Wlodarczyk`} description={excerpt}>
+<Layout
+  title={`${title} — Kat Wlodarczyk`}
+  description={excerpt}
+  image={image}
+  type="article"
+  jsonLd={jsonLd}
+  markdownUrl={`/blog/${slug}.md`}
+>
   <div class="max-w-5xl mx-auto px-4 md:px-6 pb-0 md:pb-12 pt-12">
     <!-- Breadcrumb -->
     <nav aria-label="Breadcrumb" class="mb-8 text-sm text-muted-foreground">
@@ -114,10 +147,10 @@ const formattedDate = date.toLocaleDateString("en-GB", {
           <h2 class="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-3">About the author</h2>
           <div class="mb-3">
             <p class="font-semibold text-foreground text-sm">{personalInfo.name}</p>
-            <p class="text-xs text-muted-foreground">Web Developer</p>
+            <p class="text-xs text-muted-foreground">{personalInfo.jobTitle}</p>
           </div>
           <p class="text-sm text-muted-foreground leading-relaxed">
-            Creative web developer with a background in both design and code. Writing about web development, design, and the tools she uses day-to-day.
+            {personalInfo.bio}
           </p>
         </div>
 
