@@ -80,6 +80,17 @@ export const skills = {
 
 export const projects = [
   {
+    image: "/projects/katwlodarczyk-com.png",
+    title: "katwlodarczyk.com",
+    website: "https://katwlodarczyk.com/",
+    github: "https://github.com/katwlodarczyk/katwlodarczyk2.0",
+    description: [
+      "My portfolio and blog, readable by people and AI agents",
+      "Astro + Tailwind CSS + Alpine.js",
+      "llms.txt, Markdown versions of every post, JSON-LD, RSS and a sitemap",
+    ],
+  },
+  {
     image: "/projects/haircare-scan.png",
     title: "Haircare Scan",
     website: "https://haircare-scan.web.app/",
