@@ -80,6 +80,36 @@ export const skills = {
 
 export const projects = [
   {
+    image: "/projects/just-in-case.png",
+    title: "Just in Case",
+    website: "https://justincase.katwlodarczyk.com/",
+    description: [
+      "Free emergency information binder: fill it in on screen, print a PDF, an A5 guide and a wallet card",
+      "Polish, English and German, for Poland, the UK and Poles in Germany",
+      "Runs fully in the browser: no account, no server, no tracking",
+    ],
+  },
+  {
+    image: "/projects/saldo.png",
+    title: "Saldo",
+    website: "https://saldo-4wi.pages.dev/",
+    description: [
+      "Budget PWA that shows how much is safe to spend this month",
+      "Vue 3 + TypeScript + Tailwind CSS + Supabase",
+      "Multiple bank accounts, savings goals, IKE/IKZE limits and weekly digests",
+    ],
+  },
+  {
+    image: "/projects/zeszyt-trenera.png",
+    title: "Zeszyt Trenera",
+    website: "https://zeszyt-trenera.katwlodarczyk.com/",
+    description: [
+      "Personal trainer's notebook PWA: client list, logging between sets, PBs and charts",
+      "React 19 + TypeScript + Tailwind CSS + Supabase + Dexie",
+      "Offline-first with a sync queue, works without an account",
+    ],
+  },
+  {
     image: "/projects/katwlodarczyk-com.png",
     title: "katwlodarczyk.com",
     website: "https://katwlodarczyk.com/",
