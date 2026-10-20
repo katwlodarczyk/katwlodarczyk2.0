@@ -102,7 +102,7 @@ export const projects = [
   {
     image: "/projects/trainers-notebook.png",
     title: "Trainer's Notebook",
-    website: "https://zeszyt-trenera.katwlodarczyk.com/",
+    website: "https://zeszyt-trenera.pages.dev/",
     description: [
       "Personal trainer's notebook PWA: client list, logging between sets, PBs and charts",
       "React 19 + TypeScript + Tailwind CSS + Supabase + Dexie",
