@@ -25,9 +25,9 @@
   .tx:last-child { border-bottom:none; }
   .tx .em { width:40px; height:40px; border-radius:14px; display:grid; place-items:center; font-size:18px; flex-shrink:0; background:var(--well); }
   .tx .info { flex:1; min-width:0; }
-  .tx .name { font-size:15px; font-weight:800; }
+  .tx .name { font-size:15px; font-weight:800; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .tx .name.t { color:var(--ink2); }
-  .tx .meta { font-size:12px; font-weight:700; color:var(--muted); }
+  .tx .meta { font-size:12px; font-weight:700; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .tx .amt { font-size:15px; font-weight:800; }
   .tx .amt.dim { color:var(--muted); }
 </style>
@@ -42,8 +42,8 @@
       <div class="chip"><span class="em" style="background:color-mix(in srgb, var(--c5) var(--tile-mix), var(--card))">🍕</span>Eating out</div>
     </div>
     <div class="chips">
-      <div class="chip acct">💳 mBank</div>
-      <div class="chip acct">💳 Revolut</div>
+      <div class="chip acct">💳 Main account</div>
+      <div class="chip acct">💳 Spending card</div>
       <div class="chip acct">🏦 Savings</div>
     </div>
     <div class="bar">
@@ -54,12 +54,12 @@
     <div class="list">
       <div class="tx">
         <span class="em">↔</span>
-        <span class="info"><span class="name t">Pay</span><br><span class="meta">Company account → mBank</span></span>
+        <span class="info"><span class="name t">Pay</span><br><span class="meta">Business → Main account</span></span>
         <span class="amt dim">zł 6,000.00</span>
       </div>
       <div class="tx">
         <span class="em">↔</span>
-        <span class="info"><span class="name t">Pay</span><br><span class="meta">Company account → Revolut</span></span>
+        <span class="info"><span class="name t">Pay</span><br><span class="meta">Business → Spending card</span></span>
         <span class="amt dim">zł 3,000.00</span>
       </div>
     </div>
@@ -67,7 +67,7 @@
     <div class="list">
       <div class="tx">
         <span class="em">↔</span>
-        <span class="info"><span class="name t">Buffer top-up</span><br><span class="meta">mBank → Savings</span></span>
+        <span class="info"><span class="name t">Buffer top-up</span><br><span class="meta">Main account → Savings</span></span>
         <span class="amt dim">zł 600.00</span>
       </div>
     </div>
@@ -85,8 +85,8 @@
       <div class="chip"><span class="em" style="background:color-mix(in srgb, var(--c5) var(--tile-mix), var(--card))">🍕</span>Eating out</div>
     </div>
     <div class="chips">
-      <div class="chip acct on">💳 mBank</div>
-      <div class="chip acct">💳 Revolut</div>
+      <div class="chip acct on">💳 Main account</div>
+      <div class="chip acct">💳 Spending card</div>
       <div class="chip acct">🏦 Savings</div>
     </div>
     <div class="bar">
@@ -97,12 +97,12 @@
     <div class="list">
       <div class="tx">
         <span class="em" style="background:color-mix(in srgb, var(--c1) var(--tile-mix), var(--card))">🛒</span>
-        <span class="info"><span class="name">Biedronka</span><br><span class="meta">Groceries · mBank</span></span>
+        <span class="info"><span class="name">Biedronka</span><br><span class="meta">Groceries · Main account</span></span>
         <span class="amt">zł 87.40</span>
       </div>
       <div class="tx">
         <span class="em" style="background:color-mix(in srgb, var(--c7) var(--tile-mix), var(--card))">🚗</span>
-        <span class="info"><span class="name">Orlen</span><br><span class="meta">Transport · mBank</span></span>
+        <span class="info"><span class="name">Orlen</span><br><span class="meta">Transport · Main account</span></span>
         <span class="amt">zł 240.00</span>
       </div>
     </div>
@@ -110,12 +110,12 @@
     <div class="list">
       <div class="tx">
         <span class="em">↔</span>
-        <span class="info"><span class="name t">Pay</span><br><span class="meta">Company account → mBank</span></span>
+        <span class="info"><span class="name t">Pay</span><br><span class="meta">Business → Main account</span></span>
         <span class="amt dim">zł 6,000.00</span>
       </div>
       <div class="tx">
         <span class="em" style="background:color-mix(in srgb, var(--c5) var(--tile-mix), var(--card))">🍕</span>
-        <span class="info"><span class="name">Pizzeria Nova</span><br><span class="meta">Eating out · mBank</span></span>
+        <span class="info"><span class="name">Pizzeria Nova</span><br><span class="meta">Eating out · Main account</span></span>
         <span class="amt">zł 112.00</span>
       </div>
     </div>
