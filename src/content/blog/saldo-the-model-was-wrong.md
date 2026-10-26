@@ -36,6 +36,8 @@ Only inbound crossings count. Money going the other way, out to a savings accoun
 
 ![The home screen, with the budget boundary visible: the income line shows how much of it crossed in, and each account says whether it counts](/blog/images/saldo-home-budget-boundary.png)
 
+All the numbers in these screenshots are invented, by the way. I'm happy to show you the app, slightly less happy to show you my bank balance.
+
 Showing the boundary in the interface mattered more than I expected. A little green `budget` tag next to the accounts that feed safe to spend turns an invisible rule into something you can check at a glance, and it's the thing that would have saved me the original confusion.
 
 ## Two questions wearing one flag
