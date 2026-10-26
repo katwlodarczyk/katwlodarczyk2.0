@@ -4,12 +4,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  /* 1200x630 for Open Graph, but the blog's own cards crop it to a CENTRE BAND:
-     roughly 4.35:1 on the featured card and 2.8:1 on the two-column cards. So
-     everything that matters lives inside the middle ~260px, vertically centred,
-     and nothing sits near the top or bottom edge where it would be sliced.
-     No headline either: the card template already prints the title underneath,
-     so the picture only has to carry the idea.
+  /* 1200x630 for Open Graph, but the blog's own cards centre-crop it: roughly
+     the middle 44% of the height on the featured card, 68% on the two-column
+     cards. So the headline sits BESIDE the diagram rather than above it, and
+     the whole composition lives in the middle ~250px where both crops keep it.
      Tokens from the app's src/style.css. Add ?dark for the dark variant. */
   .light {
     --page:#f1f4f2; --card:#ffffff; --ink:#1a211d; --ink2:#55605a; --muted:#8a948e;
@@ -21,31 +19,37 @@
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'Outfit', system-ui, sans-serif; background:var(--page); color:var(--ink); }
-  .card { width:1200px; height:630px; display:flex; flex-direction:column;
-    align-items:center; justify-content:center; gap:20px; overflow:hidden; }
-  .brand { display:flex; align-items:center; gap:10px; font-size:22px; font-weight:800;
-    color:var(--accent); letter-spacing:2px; }
-  .brand .dot { width:13px; height:13px; border-radius:5px; background:var(--accent); }
-  .stage { display:flex; align-items:center; gap:44px; }
-  .col { display:grid; gap:14px; }
-  .outside .chip { background:transparent; border:3px dashed var(--dash); color:var(--ink2); box-shadow:none; }
-  .chip { display:flex; align-items:center; gap:13px; background:var(--card); border-radius:22px;
-    padding:18px 30px; font-size:28px; font-weight:800; box-shadow:0 3px 14px var(--shadow); white-space:nowrap; }
-  .chip .em { font-size:28px; }
-  .pill { font-size:16px; font-weight:800; border-radius:999px; padding:3px 11px; margin-left:4px;
+  .card { width:1200px; height:630px; padding:0 40px; display:flex;
+    align-items:center; justify-content:center; gap:40px; overflow:hidden; }
+  .say { width:424px; flex-shrink:0; }
+  .brand { display:flex; align-items:center; gap:9px; font-size:17px; font-weight:800;
+    color:var(--accent); letter-spacing:2px; margin-bottom:12px; }
+  .brand .dot { width:11px; height:11px; border-radius:4px; background:var(--accent); }
+  h1 { font-size:38px; font-weight:900; letter-spacing:-1.1px; line-height:1.12; white-space:nowrap; }
+  h1 .faint { color:var(--muted); }
+  .stage { display:flex; align-items:center; gap:30px; }
+  .col { display:grid; gap:11px; }
+  .outside .chip { background:transparent; border:2px dashed var(--dash); color:var(--ink2); box-shadow:none; }
+  .chip { display:flex; align-items:center; gap:10px; background:var(--card); border-radius:16px;
+    padding:12px 20px; font-size:19px; font-weight:800; box-shadow:0 3px 12px var(--shadow); white-space:nowrap; }
+  .chip .em { font-size:19px; }
+  .pill { font-size:12px; font-weight:800; border-radius:999px; padding:2px 8px; margin-left:3px;
     background:color-mix(in srgb, var(--accent) 16%, var(--card)); color:var(--accent); }
-  .cross { display:flex; flex-direction:column; align-items:center; gap:10px; }
-  .cross .label { font-size:20px; font-weight:800; color:var(--accent); white-space:nowrap; }
-  .cross .label.quiet { color:var(--muted); font-size:18px; }
+  .cross { display:flex; flex-direction:column; align-items:center; gap:7px; }
+  .cross .label { font-size:15px; font-weight:800; color:var(--accent); white-space:nowrap; }
+  .cross .label.quiet { color:var(--muted); font-size:14px; }
   .cross svg path { stroke:var(--accent); }
-  .budget { border:4px solid var(--accent); border-radius:34px; padding:26px 30px;
+  .budget { border:3px solid var(--accent); border-radius:24px; padding:20px;
     background:color-mix(in srgb, var(--accent) var(--fill), var(--page)); position:relative; }
-  .budget .cap { position:absolute; top:-15px; left:28px; background:var(--page); padding:0 12px;
-    font-size:18px; font-weight:900; color:var(--accent); letter-spacing:1px; }
+  .budget .cap { position:absolute; top:-11px; left:20px; background:var(--page); padding:0 9px;
+    font-size:13px; font-weight:900; color:var(--accent); letter-spacing:.8px; }
 </style>
 <body class="light">
 <div class="card">
-  <div class="brand"><span class="dot"></span>SALDO</div>
+  <div class="say">
+    <div class="brand"><span class="dot"></span>SALDO</div>
+    <h1>The maths was right.<br><span class="faint">The model was wrong.</span></h1>
+  </div>
   <div class="stage">
     <div class="col outside">
       <div class="chip"><span class="em">💼</span>Company account</div>
@@ -53,9 +57,9 @@
     </div>
     <div class="cross">
       <div class="label">counts as income</div>
-      <svg width="170" height="38" viewBox="0 0 170 38" fill="none">
-        <path d="M3 19 H150" stroke-width="5" stroke-linecap="round"/>
-        <path d="M136 6 L157 19 L136 32" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <svg width="124" height="30" viewBox="0 0 124 30" fill="none">
+        <path d="M3 15 H108" stroke-width="4" stroke-linecap="round"/>
+        <path d="M97 5 L113 15 L97 25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
       </svg>
       <div class="label quiet">only on the way in</div>
     </div>
