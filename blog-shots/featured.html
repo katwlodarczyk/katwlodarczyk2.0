@@ -1,0 +1,72 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Featured: the budget boundary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  /* 1200x630, the standard Open Graph card. Tokens from src/style.css.
+     Add ?dark to the url for the dark variant; both ladders are spelled out
+     here rather than guessed, so the card cannot drift from the app. */
+  .light {
+    --page:#f1f4f2; --card:#ffffff; --ink:#1a211d; --ink2:#55605a; --muted:#8a948e;
+    --accent:#0d9058; --dash:#cdd6d1; --shadow:rgba(18,26,22,.05); --fill:7%;
+  }
+  .dark {
+    --page:#0d120f; --card:#212a24; --ink:#eef3ef; --ink2:#a8b3ac; --muted:#79857e;
+    --accent:#21a86a; --dash:#3a4740; --shadow:rgba(0,0,0,.35); --fill:12%;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Outfit', system-ui, sans-serif; background:var(--page); color:var(--ink); }
+  .card { width:1200px; height:630px; padding:54px 60px; display:flex; flex-direction:column; position:relative; overflow:hidden; }
+  .brand { display:flex; align-items:center; gap:9px; font-size:17px; font-weight:800; color:var(--accent); letter-spacing:.2px; }
+  .brand .dot { width:11px; height:11px; border-radius:4px; background:var(--accent); }
+  h1 { font-size:52px; font-weight:900; letter-spacing:-1.6px; line-height:1.08; margin-top:14px; max-width:720px; }
+  h1 .faint { color:var(--muted); }
+  .stage { flex:1; display:flex; align-items:center; justify-content:center; gap:46px; margin-top:22px; }
+  .col { display:grid; gap:12px; }
+  .outside .chip { background:transparent; border:2px dashed var(--dash); color:var(--ink2); box-shadow:none; }
+  .chip { display:flex; align-items:center; gap:11px; background:var(--card); border-radius:20px;
+    padding:17px 26px; font-size:22px; font-weight:800; box-shadow:0 2px 10px var(--shadow); white-space:nowrap; }
+  .chip .em { font-size:22px; }
+  .pill { font-size:13px; font-weight:800; border-radius:999px; padding:2px 9px; margin-left:2px;
+    background:color-mix(in srgb, var(--accent) 16%, var(--card)); color:var(--accent); }
+  .cross { display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .cross .label { font-size:16px; font-weight:800; color:var(--accent); white-space:nowrap; }
+  .cross svg path { stroke:var(--accent); }
+  .budget { border:3px solid var(--accent); border-radius:30px; padding:26px 28px 24px;
+    background:color-mix(in srgb, var(--accent) var(--fill), var(--page)); position:relative; }
+  .budget .cap { position:absolute; top:-14px; left:24px; background:var(--page); padding:0 10px;
+    font-size:15px; font-weight:900; color:var(--accent); letter-spacing:.3px; }
+  .foot { font-size:21px; font-weight:700; color:var(--ink2); margin-top:18px; }
+  .foot b { color:var(--ink); font-weight:900; }
+</style>
+<body class="light">
+<div class="card">
+  <div class="brand"><span class="dot"></span>SALDO</div>
+  <h1>The maths was right.<br><span class="faint">The model was wrong.</span></h1>
+  <div class="stage">
+    <div class="col outside">
+      <div class="chip"><span class="em">💼</span>Company account</div>
+      <div class="chip"><span class="em">🏦</span>Savings</div>
+    </div>
+    <div class="cross">
+      <div class="label">counts as income</div>
+      <svg width="168" height="34" viewBox="0 0 168 34" fill="none">
+        <path d="M2 17 H150" stroke-width="4" stroke-linecap="round"/>
+        <path d="M138 6 L156 17 L138 28" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <div class="label" style="color:var(--muted)">only on the way in</div>
+    </div>
+    <div class="budget">
+      <span class="cap">SAFE TO SPEND</span>
+      <div class="col">
+        <div class="chip"><span class="em">💳</span>mBank <span class="pill">budget</span></div>
+        <div class="chip"><span class="em">💳</span>Revolut <span class="pill">budget</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">A budget is not a list of transactions. It is a <b>set of accounts</b>.</div>
+</div>
+<script>
+  if (location.search.includes('dark')) document.body.className = 'dark'
+</script>

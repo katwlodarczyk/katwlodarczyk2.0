@@ -1,0 +1,22 @@
+/* Shared phone shell for the blog illustrations.
+   Tokens copied verbatim from src/style.css so the pictures cannot drift
+   away from the app's real colours. */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Outfit', system-ui, -apple-system, sans-serif; display:flex; gap:28px; padding:24px; flex-wrap:wrap; justify-content:center; background:#e9ece9; }
+.phone { width:375px; border-radius:44px; overflow:hidden; position:relative;
+  box-shadow:0 0 0 10px #1a211d, 0 24px 48px rgba(0,0,0,.25); background:var(--page); color:var(--ink); }
+.phone.light {
+  --page:#f1f4f2; --card:#ffffff; --well:#f1f4f2; --track:#e7ebe9; --ink:#1a211d; --ink2:#55605a; --muted:#8a948e; --hair:#e3e8e5;
+  --accent:#0d9058; --good:#166534; --bad:#c93a3a; --warn:#9a6b00;
+  --c1:#e8603c; --c2:#0e9888; --c3:#e3a008; --c4:#7c5cd6; --c5:#55a630; --c6:#d6568f; --c7:#3b82c4; --c8:#b1642e;
+  --tile-mix:16%; }
+.status { display:flex; justify-content:space-between; padding:16px 26px 6px; font-size:14px; font-weight:800; }
+.scroll { padding:8px 20px 24px; }
+.head { display:flex; justify-content:space-between; align-items:center; margin:6px 2px 12px; }
+h1 { font-size:22px; font-weight:900; letter-spacing:-.4px; }
+.month-pill { background:var(--card); border:1px solid var(--hair); border-radius:999px; padding:8px 14px; font-size:14px; font-weight:800; box-shadow:0 2px 8px rgba(18,26,22,.06); }
+.seg { display:flex; background:var(--track); border-radius:18px; padding:4px; margin-bottom:10px; }
+.seg > div { flex:1; text-align:center; padding:8px 0; border-radius:13px; font-size:14px; font-weight:800; color:var(--muted); }
+.seg > div.on { background:var(--accent); color:#fff; }
+.card { background:var(--card); border-radius:26px; padding:18px 18px 8px; box-shadow:0 2px 12px rgba(18,26,22,.06); }
+.card h3 { font-size:15px; font-weight:900; }

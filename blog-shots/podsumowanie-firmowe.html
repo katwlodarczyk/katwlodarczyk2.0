@@ -1,0 +1,54 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Summary: Business</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_shell.css">
+<style>
+  .tiles { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .tile { background:var(--card); border-radius:22px; padding:14px; box-shadow:0 2px 10px rgba(18,26,22,.05); }
+  .tile .l { font-size:12px; font-weight:800; color:var(--muted); }
+  .tile .v { font-size:19px; font-weight:900; letter-spacing:-.3px; margin-top:1px; }
+  .tile .v.plus { color:var(--good); }
+  .tile .d { font-size:11px; font-weight:700; color:var(--muted); }
+  .donut-wrap { display:flex; justify-content:center; position:relative; padding:8px 0 4px; }
+  .donut-c { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; }
+  .donut-c .n { font-size:16px; font-weight:900; }
+  .donut-c .l { font-size:11px; font-weight:700; color:var(--muted); }
+  .row { display:flex; align-items:center; gap:8px; padding:8px 2px; border-bottom:1px solid var(--hair); font-size:13px; white-space:nowrap; }
+  .row:last-child { border-bottom:none; }
+  .row .dot { width:12px; height:12px; border-radius:5px; flex-shrink:0; }
+  .row .nm { flex:1; font-weight:800; }
+  .row .pct { font-size:11px; font-weight:700; color:var(--muted); width:32px; text-align:right; }
+  .row .amt { font-weight:800; width:92px; text-align:right; font-variant-numeric:tabular-nums; }
+</style>
+<div class="phone light">
+  <div class="status"><span>9:41</span><span>📶 🔋</span></div>
+  <div class="scroll">
+    <div class="head"><h1>Summary</h1><div class="month-pill">‹ October ›</div></div>
+    <div class="seg"><div>Personal</div><div class="on">Business</div></div>
+    <div class="seg"><div class="on">Month</div><div>Year</div></div>
+    <div class="tiles">
+      <div class="tile"><div class="l">Income</div><div class="v plus">zł 18,450.00</div><div class="d">plan: zł 16,000.00</div></div>
+      <div class="tile"><div class="l">Expenses</div><div class="v">zł 4,120.00</div><div class="d">incl. fixed: zł 2,300.00</div></div>
+      <div class="tile"><div class="l">Drawings</div><div class="v">zł 9,000.00</div><div class="d">moved to personal accounts</div></div>
+      <div class="tile"><div class="l">Surplus</div><div class="v plus">+zł 5,330.00</div><div class="d">income minus spending and saved</div></div>
+    </div>
+    <div class="card">
+      <h3>Where the income went</h3>
+      <div class="donut-wrap">
+        <svg width="150" height="150" viewBox="0 0 160 160">
+          <g fill="none" stroke-width="24">
+            <circle cx="80" cy="80" r="58" stroke="var(--c1)" stroke-dasharray="81.4 999" transform="rotate(-90 80 80)"/>
+            <circle cx="80" cy="80" r="58" stroke="var(--c7)" stroke-dasharray="177.8 999" transform="rotate(-9.6 80 80)"/>
+            <circle cx="80" cy="80" r="58" stroke="var(--hair)" stroke-dasharray="105.3 999" transform="rotate(166 80 80)"/>
+          </g>
+        </svg>
+        <div class="donut-c"><div class="n">zł 18,450.00</div><div class="l">income</div></div>
+      </div>
+      <div class="row"><span class="dot" style="background:var(--c1)"></span><span class="nm">🛒 Expenses</span><span class="pct">22%</span><span class="amt">zł 4,120.00</span></div>
+      <div class="row"><span class="dot" style="background:var(--c7)"></span><span class="nm">🔄 Drawings</span><span class="pct">49%</span><span class="amt">zł 9,000.00</span></div>
+      <div class="row"><span class="dot" style="background:var(--hair)"></span><span class="nm">💤 Left over</span><span class="pct">29%</span><span class="amt">zł 5,330.00</span></div>
+    </div>
+  </div>
+</div>

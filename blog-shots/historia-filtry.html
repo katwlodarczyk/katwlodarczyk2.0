@@ -1,0 +1,123 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>History: filters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_shell.css">
+<style>
+  .search { background:var(--card); border-radius:16px; padding:12px 14px 12px 38px; font-size:14px; font-weight:700; color:var(--muted);
+    box-shadow:0 2px 10px rgba(18,26,22,.05); position:relative; }
+  .search::before { content:'🔍'; position:absolute; left:14px; top:50%; transform:translateY(-50%); font-size:13px; }
+  .chips { display:flex; gap:6px; margin-top:10px; overflow:hidden; }
+  .chip { display:flex; align-items:center; gap:5px; flex-shrink:0; border-radius:999px; padding:6px 12px 6px 6px;
+    font-size:12.5px; font-weight:800; background:var(--card); color:var(--ink); }
+  .chip .em { width:24px; height:24px; border-radius:999px; display:grid; place-items:center; font-size:13px; background:var(--well); }
+  .chip.on { background:var(--accent); color:#fff; }
+  .chip.acct { padding:7px 12px; }
+  .chip.acct.on { background:var(--ink); color:var(--card); }
+  .bar { display:flex; justify-content:space-between; align-items:center; gap:8px; background:var(--card); border-radius:16px;
+    padding:10px 14px; margin-top:10px; font-size:13px; font-weight:800; box-shadow:0 2px 10px rgba(18,26,22,.05); }
+  .bar .clear { font-size:12px; color:var(--accent); flex-shrink:0; }
+  .bar .dim { color:var(--muted); font-weight:700; }
+  .day { font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.4px; color:var(--muted); margin:16px 4px 6px; }
+  .list { background:var(--card); border-radius:26px; padding:4px 16px; box-shadow:0 2px 12px rgba(18,26,22,.06); }
+  .tx { display:flex; align-items:center; gap:12px; padding:10px 0; border-bottom:1px solid var(--hair); }
+  .tx:last-child { border-bottom:none; }
+  .tx .em { width:40px; height:40px; border-radius:14px; display:grid; place-items:center; font-size:18px; flex-shrink:0; background:var(--well); }
+  .tx .info { flex:1; min-width:0; }
+  .tx .name { font-size:15px; font-weight:800; }
+  .tx .name.t { color:var(--ink2); }
+  .tx .meta { font-size:12px; font-weight:700; color:var(--muted); }
+  .tx .amt { font-size:15px; font-weight:800; }
+  .tx .amt.dim { color:var(--muted); }
+</style>
+<div class="phone light">
+  <div class="status"><span>9:41</span><span>📶 🔋</span></div>
+  <div class="scroll">
+    <div class="head"><h1>History</h1><div class="month-pill">‹ October ›</div></div>
+    <div class="search">Search notes…</div>
+    <div class="chips">
+      <div class="chip on"><span class="em" style="background:rgba(255,255,255,.22)">↔</span>Transfers</div>
+      <div class="chip"><span class="em" style="background:color-mix(in srgb, var(--c1) var(--tile-mix), var(--card))">🛒</span>Groceries</div>
+      <div class="chip"><span class="em" style="background:color-mix(in srgb, var(--c5) var(--tile-mix), var(--card))">🍕</span>Eating out</div>
+    </div>
+    <div class="chips">
+      <div class="chip acct">💳 mBank</div>
+      <div class="chip acct">💳 Revolut</div>
+      <div class="chip acct">🏦 Savings</div>
+    </div>
+    <div class="bar">
+      <span class="dim">Transferred: zł 9,600.00</span>
+      <span class="clear">Clear filters</span>
+    </div>
+    <div class="day">Monday, 5 October</div>
+    <div class="list">
+      <div class="tx">
+        <span class="em">↔</span>
+        <span class="info"><span class="name t">Pay</span><br><span class="meta">Company account → mBank</span></span>
+        <span class="amt dim">zł 6,000.00</span>
+      </div>
+      <div class="tx">
+        <span class="em">↔</span>
+        <span class="info"><span class="name t">Pay</span><br><span class="meta">Company account → Revolut</span></span>
+        <span class="amt dim">zł 3,000.00</span>
+      </div>
+    </div>
+    <div class="day">Thursday, 1 October</div>
+    <div class="list">
+      <div class="tx">
+        <span class="em">↔</span>
+        <span class="info"><span class="name t">Buffer top-up</span><br><span class="meta">mBank → Savings</span></span>
+        <span class="amt dim">zł 600.00</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="phone light">
+  <div class="status"><span>9:41</span><span>📶 🔋</span></div>
+  <div class="scroll">
+    <div class="head"><h1>History</h1><div class="month-pill">‹ October ›</div></div>
+    <div class="search">Search notes…</div>
+    <div class="chips">
+      <div class="chip"><span class="em" style="background:var(--well)">↔</span>Transfers</div>
+      <div class="chip"><span class="em" style="background:color-mix(in srgb, var(--c1) var(--tile-mix), var(--card))">🛒</span>Groceries</div>
+      <div class="chip"><span class="em" style="background:color-mix(in srgb, var(--c5) var(--tile-mix), var(--card))">🍕</span>Eating out</div>
+    </div>
+    <div class="chips">
+      <div class="chip acct on">💳 mBank</div>
+      <div class="chip acct">💳 Revolut</div>
+      <div class="chip acct">🏦 Savings</div>
+    </div>
+    <div class="bar">
+      <span>Spent: zł 1,840.00 <span class="dim">· no account: 3</span></span>
+      <span class="clear">Clear filters</span>
+    </div>
+    <div class="day">Tuesday, 6 October</div>
+    <div class="list">
+      <div class="tx">
+        <span class="em" style="background:color-mix(in srgb, var(--c1) var(--tile-mix), var(--card))">🛒</span>
+        <span class="info"><span class="name">Biedronka</span><br><span class="meta">Groceries · mBank</span></span>
+        <span class="amt">zł 87.40</span>
+      </div>
+      <div class="tx">
+        <span class="em" style="background:color-mix(in srgb, var(--c7) var(--tile-mix), var(--card))">🚗</span>
+        <span class="info"><span class="name">Orlen</span><br><span class="meta">Transport · mBank</span></span>
+        <span class="amt">zł 240.00</span>
+      </div>
+    </div>
+    <div class="day">Monday, 5 October</div>
+    <div class="list">
+      <div class="tx">
+        <span class="em">↔</span>
+        <span class="info"><span class="name t">Pay</span><br><span class="meta">Company account → mBank</span></span>
+        <span class="amt dim">zł 6,000.00</span>
+      </div>
+      <div class="tx">
+        <span class="em" style="background:color-mix(in srgb, var(--c5) var(--tile-mix), var(--card))">🍕</span>
+        <span class="info"><span class="name">Pizzeria Nova</span><br><span class="meta">Eating out · mBank</span></span>
+        <span class="amt">zł 112.00</span>
+      </div>
+    </div>
+  </div>
+</div>
