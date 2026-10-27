@@ -41,28 +41,6 @@ document.querySelectorAll<HTMLElement>("[data-theme-toggle]").forEach((button) =
   });
 });
 
-// Poke the profile photo.
-const pokeLines = ["Hey! 👋", "That tickles", "Stop it 😄", "Seriously...", "OK fine, I'm off for a run 🏃‍♀️"];
-document.querySelectorAll<HTMLElement>("[data-poke]").forEach((photo) => {
-  const say = photo.querySelector<HTMLElement>("[data-poke-say]");
-  let pokes = 0;
-  let hide: ReturnType<typeof setTimeout>;
-  photo.addEventListener("click", () => {
-    if (!reducedMotion) {
-      photo.classList.remove("egg-wiggle");
-      void photo.offsetWidth;
-      photo.classList.add("egg-wiggle");
-    }
-    if (say) {
-      say.textContent = pokeLines[pokes % pokeLines.length];
-      say.classList.add("is-shown");
-      clearTimeout(hide);
-      hide = setTimeout(() => say.classList.remove("is-shown"), 1800);
-    }
-    pokes++;
-  });
-});
-
 // Click a hand-drawn highlight to swap the marker colour.
 const markers = ["#9998d4", "#7ee0c0", "#ffc861", "#FF8FBB"];
 document.addEventListener("click", (event) => {
