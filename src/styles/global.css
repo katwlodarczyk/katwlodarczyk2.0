@@ -218,3 +218,14 @@ html.disco .bg-hero-gradient {
 @keyframes egg-disco {
   to { filter: hue-rotate(360deg) saturate(1.6); }
 }
+.egg-confetti {
+  position: fixed;
+  top: -40px;
+  z-index: 100;
+  font-size: 26px;
+  pointer-events: none;
+  animation: egg-fall 2.5s ease-in forwards;
+}
+@keyframes egg-fall {
+  to { translate: 0 calc(100vh + 80px); rotate: 540deg; }
+}

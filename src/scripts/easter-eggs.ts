@@ -21,7 +21,7 @@ console.log(
   "color:#7675B9;font-weight:bold;font-family:monospace",
 );
 console.log(
-  "%cHey, curious dev! 👋\n%cSince you're poking around: this site is Astro + Tailwind + Alpine.js.\nThere are a few more surprises hidden on the page. Try being indecisive about dark mode 😉\nAI agent? Start at /llms.txt",
+  "%cHey, curious dev! 👋\n%cSince you're poking around: this site is Astro + Tailwind + Alpine.js.\nThere are a few more surprises hidden on the page. Try being indecisive about dark mode,\nor go old school: ↑ ↑ ↓ ↓ ← → ← → B A 😉\nAI agent? Start at /llms.txt",
   "font-size:14px;font-weight:bold;color:#FF8FBB",
   "font-size:12px;color:inherit",
 );
@@ -39,6 +39,30 @@ document.querySelectorAll<HTMLElement>("[data-theme-toggle]").forEach((button) =
     document.documentElement.classList.add("disco");
     setTimeout(() => document.documentElement.classList.remove("disco"), 3000);
   });
+});
+
+// Konami code: ↑ ↑ ↓ ↓ ← → ← → B A rains running shoes and sparkles.
+const konami = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
+const confettiBits = ["👟", "💜", "✨", "🩷", "🏃‍♀️"];
+let konamiPos = 0;
+document.addEventListener("keydown", (event) => {
+  const key = event.key.length === 1 ? event.key.toLowerCase() : event.key;
+  konamiPos = key === konami[konamiPos] ? konamiPos + 1 : key === konami[0] ? 1 : 0;
+  if (konamiPos < konami.length) return;
+  konamiPos = 0;
+  toast("You found it! 🎉");
+  if (reducedMotion) return;
+  for (let i = 0; i < 40; i++) {
+    const bit = document.createElement("span");
+    bit.className = "egg-confetti";
+    bit.setAttribute("aria-hidden", "true");
+    bit.textContent = confettiBits[i % confettiBits.length];
+    bit.style.left = `${Math.random() * 100}vw`;
+    bit.style.animationDelay = `${Math.random() * 0.8}s`;
+    bit.style.animationDuration = `${2 + Math.random() * 1.2}s`;
+    document.body.appendChild(bit);
+    setTimeout(() => bit.remove(), 4200);
+  }
 });
 
 // Click a hand-drawn highlight to swap the marker colour.
