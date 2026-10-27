@@ -122,13 +122,14 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(transparent 52%, rgba(255, 143, 187, 0.45) 52%);
+    background: linear-gradient(transparent 52%, color-mix(in srgb, var(--marker, #FF8FBB) 45%, transparent) 52%);
+    transition: background 0.3s ease;
     filter: url(#highlight-rough);
     z-index: -1;
     border-radius: 2px;
   }
   :is(.dark *) .text-highlight::before {
-    background: linear-gradient(transparent 52%, rgba(255, 143, 187, 0.75) 52%);
+    background: linear-gradient(transparent 52%, color-mix(in srgb, var(--marker, #FF8FBB) 75%, transparent) 52%);
   }
   .bg-hero-gradient {
     background-color: var(--background);
@@ -186,3 +187,63 @@
   }
 }
 
+
+/* Easter eggs */
+.egg-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 100;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--foreground);
+  color: var(--background);
+  font-family: var(--font-display);
+  font-size: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: egg-toast 3s ease forwards;
+  pointer-events: none;
+}
+@keyframes egg-toast {
+  0% { opacity: 0; translate: 0 12px; }
+  10%, 85% { opacity: 1; translate: 0 0; }
+  100% { opacity: 0; translate: 0 12px; }
+}
+html.disco #main-content,
+html.disco header,
+html.disco .bg-hero-gradient {
+  animation: egg-disco 0.9s linear infinite;
+}
+@keyframes egg-disco {
+  to { filter: hue-rotate(360deg) saturate(1.6); }
+}
+.egg-wiggle {
+  animation: egg-wiggle 0.45s ease;
+}
+@keyframes egg-wiggle {
+  25% { rotate: -4deg; }
+  75% { rotate: 4deg; }
+}
+.egg-say {
+  position: absolute;
+  top: 16px;
+  right: -8px;
+  z-index: 2;
+  max-width: 190px;
+  padding: 8px 12px;
+  border-radius: 14px 14px 2px 14px;
+  background: var(--card);
+  color: var(--foreground);
+  font-size: 13px;
+  line-height: 1.4;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  translate: 0 6px;
+  transition: opacity 0.2s ease, translate 0.2s ease;
+  pointer-events: none;
+}
+.egg-say.is-shown {
+  opacity: 1;
+  translate: 0 0;
+}
